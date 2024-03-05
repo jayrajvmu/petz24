@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<?php require('components/head.php')?>
+<?php require('components/head.php');?>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/custom/css/profile.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/custom/css/product.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/responsive.css">
 
-
-<?php require('components/header.php')?>
-
+<?php require('components/header.php');?>
 
 <body class="home-1">
-<section class="order-histry-area section-tb-padding">
+    <section class="order-histry-area section-tb-padding">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -22,19 +21,17 @@
                                 </div>
                                 <div class="order-name">
                                     <h4>Sergio Marquina</h4>
-                                    <span>Joined april 06, 2024</span>
+                                    <span>Joined April 06, 2024</span>
                                 </div>
                             </div>
                             <div class="order-his-page">
                                 <ul class="profile-ul">
-                                    <!-- <li class="profile-li"><a href="order-history.html"><span>Orders</span> <span class="pro-count">5</span></a></li> -->
-                                    <li class="profile-li"><a href="profile.html" class="active">Profile</a></li>
-                                    <li class="profile-li"><a href="pro-addresses.html">Address</a></li>
-                                    <!-- <li class="profile-li"><a href="pro-wishlist.html"><span>Wishlist</span> <span class="pro-count">3</span></a></li> -->
+                                    <li class="profile-li"><a href="#" class="active profilee">Profile</a></li>
+                                    <li class="profile-li"><a href="#" class="addresss">Address</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="profile-form">
+                        <div class="profile-form" id="profile">
                             <form>
                                 <ul class="pro-input-label">
                                     <li>
@@ -77,12 +74,55 @@
                                 </ul>
                             </form>
                         </div>
+                        <div class="profile-form d-none" id="address">
+                            <form>
+                            <ul class="pro-input-label">
+            <li>
+                <label>Address</label>
+                <input type="text" name="address" placeholder="Address">
+            </li>
+            <li>
+                <label>City</label>
+                <input type="text" name="city" placeholder="City">
+            </li>
+        </ul>
+        <ul class="pro-input-label">
+            <li>
+                <label>State</label>
+                <input type="text" name="state" placeholder="State">
+            </li>
+            <li>
+                <label>Pin code</label>
+                <input type="text" name="pincode" placeholder="Pin code">
+            </li>
+        </ul>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <?php require('components/footer.php')?>
-    <?php require('components/js.php')?>
+    <?php require('components/footer.php');?>
+    <?php require('components/js.php');?>
+
+    <script>
+        $(document).ready(function(){
+            $('.addresss').click(function(){
+                $('#profile').addClass('d-none');
+                $('#address').removeClass('d-none').addClass('d-inline');
+                $('.addresss').addClass('active')
+                $('.profilee').removeClass('active')
+
+            });
+
+            $('.profilee').click(function(){
+                $('#address').addClass('d-none');
+                $('#profile').removeClass('d-none').addClass('d-inline');
+                $('.profilee').addClass('active')
+                $('.addresss').removeClass('active')
+            });
+        });
+    </script>
 </body>
 </html>

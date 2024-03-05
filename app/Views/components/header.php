@@ -469,9 +469,9 @@
                                                     </span>
                                                 </a>
                                             </div>
-                                            
 
-                                            
+
+
                                         </div>
                                     </li>
                                     <li class="side-wrap cart-wrap">
@@ -479,7 +479,8 @@
                                             <div class="shopping-cart">
                                                 <a href="<?php echo base_url();?>profile" class="cart-count">
                                                     <span class="cart-icon-wrap">
-                                                        <span class="cart-icon"><span><i class="icon-user"></i></span></span>
+                                                        <span class="cart-icon"><span><i
+                                                                    class="icon-user"></i></span></span>
                                                     </span>
                                                 </a>
                                             </div>
@@ -506,114 +507,138 @@
             </div>
             <div class="navbar-collapse" id="navbarContent">
                 <!-- main-menu start -->
-                <div class="megamenu-content" style="display: none;">
+                <div class="megamenu-content">
                     <div class="mainwrap">
                         <ul class="main-menu">
                             <li class="menu-link parent">
                                 <a href="javascript:void(0)" class="link-title">
-                                    <span class="sp-link-title">Shop</span>
+                                    <span class="sp-link-title">Dogs</span>
                                     <i class="fa fa-angle-down"></i>
                                 </a>
                                 <a href="#collapse-mega-menu" data-bs-toggle="collapse"
                                     class="link-title link-title-lg">
-                                    <span class="sp-link-title">Shop</span>
+                                    <span class="sp-link-title">Dogs</span>
                                     <i class="fa fa-angle-down"></i>
                                 </a>
                                 <ul class="dropdown-submenu mega-menu collapse" id="collapse-mega-menu">
                                     <li class="megamenu-li parent">
-                                        <h2 class="sublink-title">Fresh food</h2>
+                                        <h2 class="sublink-title">Food</h2>
                                         <a href="#collapse-sub-mega-menu" data-bs-toggle="collapse"
                                             class="sublink-title sublink-title-lg">
-                                            <span>Fresh food</span>
+                                            <span>Food</span>
                                             <i class="fa fa-angle-down"></i>
                                         </a>
                                         <ul class="dropdown-supmenu collapse" id="collapse-sub-mega-menu">
-                                            <li class="supmenu-li"><a href="#">Fruit & nut</a></li>
-                                            <li class="supmenu-li"><a href="#">Snack food</a></li>
-                                            <li class="supmenu-li"><a href="#">Organics nut gifts</a></li>
-                                            <li class="supmenu-li"><a href="#">Non dairy</a></li>
-                                            <li class="supmenu-li"><a href="#">Mayonnaise</a></li>
-                                            <li class="supmenu-li"><a href="#">Milk almond</a></li>
+                                            <li class="supmenu-li"><a href="#">Dry Food</a></li>
+                                            <li class="supmenu-li"><a href="#">Wet Food</a></li>
+                                            <li class="supmenu-li"><a href="#">Fresh Food</a></li>
+
                                         </ul>
                                     </li>
                                     <li class="megamenu-li parent">
-                                        <h2 class="sublink-title">Mixedfruits</h2>
+                                        <h2 class="sublink-title">Treats</h2>
                                         <a href="#collapse-fruits-menu" data-bs-toggle="collapse"
                                             class="sublink-title sublink-title-lg">
-                                            <span>Mixedfruits</span>
+                                            <span>Treats</span>
                                             <i class="fa fa-angle-down"></i>
                                         </a>
                                         <ul class="dropdown-supmenu collapse" id="collapse-fruits-menu">
-                                            <li class="supmenu-li"><a href="#">Oranges</a></li>
-                                            <li class="supmenu-li"><a href="#">Coffee creamers</a></li>
-                                            <li class="supmenu-li"><a href="#">Ghee beverages</a></li>
-                                            <li class="supmenu-li"><a href="#">Ranch salad</a></li>
-                                            <li class="supmenu-li"><a href="#">Hemp milk</a></li>
-                                            <li class="supmenu-li"><a href="#">Nuts & seeds</a></li>
+                                            <li class="supmenu-li"><a href="#">Biscuits</a></li>
+                                            <li class="supmenu-li"><a href="#">Cookies</a></li>
+                                            <li class="supmenu-li"><a href="#">Chicken</a></li>
                                         </ul>
                                     </li>
                                     <li class="megamenu-li parent">
-                                        <h2 class="sublink-title">Bananas & plantains</h2>
+                                        <h2 class="sublink-title">Toys</h2>
                                         <a href="#collapse-banana-menu" data-bs-toggle="collapse"
                                             class="sublink-title sublink-title-lg">
-                                            <span>Bananas & plantains</span>
+                                            <span>Toys</span>
                                             <i class="fa fa-angle-down"></i>
                                         </a>
                                         <ul class="dropdown-supmenu collapse" id="collapse-banana-menu">
-                                            <li class="supmenu-li"><a href="#">Fresh gala</a></li>
-                                            <li class="supmenu-li"><a href="#">Fresh berries</a></li>
-                                            <li class="supmenu-li"><a href="#">Fruit & nut</a></li>
-                                            <li class="supmenu-li"><a href="#">Fifts mixed fruits</a></li>
-                                            <li class="supmenu-li"><a href="#">Oranges</a></li>
-                                            <li class="supmenu-li"><a href="#">Oranges</a></li>
+                                            <li class="supmenu-li"><a href="#">Chew Toy</a></li>
+                                            <li class="supmenu-li"><a href="#">Plush Toy</a></li>
+                                            <li class="supmenu-li"><a href="#">Rope Toy</a></li>
                                         </ul>
                                     </li>
                                     <li class="megamenu-li parent">
-                                        <h2 class="sublink-title">Apples berries</h2>
+                                        <h2 class="sublink-title">Grooming</h2>
                                         <a href="#collapse-apple-menu" data-bs-toggle="collapse"
                                             class="sublink-title sublink-title-lg">
-                                            <span>Apples berries</span>
+                                            <span>Grooming</span>
                                             <i class="fa fa-angle-down"></i>
                                         </a>
                                         <ul class="dropdown-supmenu collapse" id="collapse-apple-menu">
-                                            <li class="supmenu-li"><a href="#">Pears produce</a></li>
-                                            <li class="supmenu-li"><a href="#">Bananas</a></li>
-                                            <li class="supmenu-li"><a href="#">Natural grassbeab</a></li>
-                                            <li class="supmenu-li"><a href="#">Fresh green orange</a></li>
-                                            <li class="supmenu-li"><a href="#">Fresh organic reachter</a></li>
-                                            <li class="supmenu-li"><a href="#">Balckberry 100%organic</a></li>
+                                            <li class="supmenu-li"><a href="#">Shampoo</a></li>
+                                            <li class="supmenu-li"><a href="#">Wipes</a></li>
+                                            <li class="supmenu-li"><a href="#">Grooming Tool</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
                             <li class="menu-link parent">
                                 <a href="javascript:void(0)" class="link-title">
-                                    <span class="sp-link-title">Collection</span>
+                                    <span class="sp-link-title">Cats</span>
                                     <i class="fa fa-angle-down"></i>
                                 </a>
-                                <a href="#collapse-banner-menu" data-bs-toggle="collapse"
+                                <a href="#collapse-mega-menu" data-bs-toggle="collapse"
                                     class="link-title link-title-lg">
-                                    <span class="sp-link-title">Collection</span>
+                                    <span class="sp-link-title">Cats</span>
                                     <i class="fa fa-angle-down"></i>
                                 </a>
-                                <ul class="dropdown-submenu banner-menu collapse" id="collapse-banner-menu">
-                                    <li class="menu-banner">
-                                        <a href="#" class="menu-banner-img"><img
-                                                src="<?php echo base_url();?>assets/image/menu-banner01.jpg"
-                                                alt="menu-image" class="img-fluid"></a>
-                                        <a href="#" class="menu-banner-title"><span>Bestseller</span></a>
+                                <ul class="dropdown-submenu mega-menu collapse" id="collapse-mega-menu">
+                                    <li class="megamenu-li parent">
+                                        <h2 class="sublink-title">Food</h2>
+                                        <a href="#collapse-sub-mega-menu" data-bs-toggle="collapse"
+                                            class="sublink-title sublink-title-lg">
+                                            <span>Food</span>
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <ul class="dropdown-supmenu collapse" id="collapse-sub-mega-menu">
+                                            <li class="supmenu-li"><a href="#">Dry Food</a></li>
+                                            <li class="supmenu-li"><a href="#">Wet Food</a></li>
+                                            <li class="supmenu-li"><a href="#">Fresh Food</a></li>
+
+                                        </ul>
                                     </li>
-                                    <li class="menu-banner">
-                                        <a href="#" class="menu-banner-img"><img
-                                                src="<?php echo base_url();?>assets/image/menu-banner02.jpg"
-                                                alt="menu-image" class="img-fluid"></a>
-                                        <a href="#" class="menu-banner-title"><span>Special product</span></a>
+                                    <li class="megamenu-li parent">
+                                        <h2 class="sublink-title">Treats</h2>
+                                        <a href="#collapse-fruits-menu" data-bs-toggle="collapse"
+                                            class="sublink-title sublink-title-lg">
+                                            <span>Treats</span>
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <ul class="dropdown-supmenu collapse" id="collapse-fruits-menu">
+                                            <li class="supmenu-li"><a href="#">Biscuits</a></li>
+                                            <li class="supmenu-li"><a href="#">Cookies</a></li>
+                                            <li class="supmenu-li"><a href="#">Chicken</a></li>
+                                        </ul>
                                     </li>
-                                    <li class="menu-banner">
-                                        <a href="#" class="menu-banner-img"><img
-                                                src="<?php echo base_url();?>assets/image/menu-banner03.jpg"
-                                                alt="mneu image" class="img-fluid"></a>
-                                        <a href="#" class="menu-banner-title"><span>Featured product</span></a>
+                                    <li class="megamenu-li parent">
+                                        <h2 class="sublink-title">Toys</h2>
+                                        <a href="#collapse-banana-menu" data-bs-toggle="collapse"
+                                            class="sublink-title sublink-title-lg">
+                                            <span>Toys</span>
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <ul class="dropdown-supmenu collapse" id="collapse-banana-menu">
+                                            <li class="supmenu-li"><a href="#">Chew Toy</a></li>
+                                            <li class="supmenu-li"><a href="#">Plush Toy</a></li>
+                                            <li class="supmenu-li"><a href="#">Rope Toy</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="megamenu-li parent">
+                                        <h2 class="sublink-title">Grooming</h2>
+                                        <a href="#collapse-apple-menu" data-bs-toggle="collapse"
+                                            class="sublink-title sublink-title-lg">
+                                            <span>Grooming</span>
+                                            <i class="fa fa-angle-down"></i>
+                                        </a>
+                                        <ul class="dropdown-supmenu collapse" id="collapse-apple-menu">
+                                            <li class="supmenu-li"><a href="#">Shampoo</a></li>
+                                            <li class="supmenu-li"><a href="#">Wipes</a></li>
+                                            <li class="supmenu-li"><a href="#">Grooming Tool</a></li>
+                                        </ul>
                                     </li>
                                 </ul>
                             </li>
