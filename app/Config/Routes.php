@@ -14,5 +14,7 @@ $routes->get('product', 'Home::product');
 $routes->get('product-description', 'Home::productDescription');
 //Profile
 $routes->get('profile', 'Home::profile');
+//Cart
+$routes->get('cart', 'Home::cart');
 
 

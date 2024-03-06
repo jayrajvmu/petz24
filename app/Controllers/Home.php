@@ -23,4 +23,8 @@ class Home extends BaseController
     {
         return view('profile');
     }
+    public function cart()
+    {
+        return view('cart');
+    }
 }
