@@ -2,8 +2,8 @@
 <html lang="en">
 
 <?php require('components/head.php')?>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/custom/css/cart.css">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/responsive.css">
-<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/style.css">
 
 
 <?php require('components/header.php')?>
@@ -23,7 +23,7 @@
                                 <div class="cart-all-pro">
                                     <div class="cart-pro">
                                         <div class="cart-pro-image">
-                                            <a href="product.html"><img src="<?php echo base_url();?>assets/image/cart-page/cart-1/image1.jpg" class="img-fluid" alt="image"></a>
+                                            <a href="product.html"><img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/l/i/little_bigpaw_gourmet_tender_turkey_mousse_wet_cat_food.jpg" class="img-fluid" width="200px"alt="image"></a>
                                         </div>
                                         <div class="pro-details">
                                             <h4><a href="product.html">Vegetable tomato fresh</a></h4>
@@ -55,7 +55,7 @@
                                 <div class="cart-all-pro">
                                     <div class="cart-pro">
                                         <div class="cart-pro-image">
-                                            <a href="product.html"><img src="<?php echo base_url();?>assets/image/cart-page/cart-1/image3.jpg" class="img-fluid" alt="image"></a>
+                                            <a href="product.html"><img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/p/e/pedigree_vegetarian_puppy_adult_dry_food-1_kg.jpg" class="img-fluid" width="200px" alt="image"></a>
                                         </div>
                                         <div class="pro-details">
                                             <h4><a href="product.html">Fresh healthy food</a></h4>
@@ -87,7 +87,7 @@
                                 <div class="cart-all-pro">
                                     <div class="cart-pro">
                                         <div class="cart-pro-image">
-                                            <a href="product.html"><img src="<?php echo base_url();?>assets/image/cart-page/cart-1/image2.jpg" class="img-fluid" alt="image"></a>
+                                            <a href="product.html"><img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/r/o/royal_canin_shih_tzu_puppy_dry_food_-_1.5_kg_1.jpg" class="img-fluid" width="200px" alt="image"></a>
                                         </div>
                                         <div class="pro-details">
                                             <h4><a href="product.html">Fresh green orange</a></h4>
@@ -112,13 +112,6 @@
                                         <span>$109.20 CAD</span>
                                     </div>
                                 </div>
-                                <div class="other-link">
-                                    <ul class="c-link">
-                                        <li class="cart-other-link"><a href="grid-list.html" class="btn btn-style1">Update cart</a></li>
-                                        <li class="cart-other-link"><a href="grid-list.html" class="btn btn-style1">Continue shopping</a></li>
-                                        <li class="cart-other-link"><a href="index1.html" class="btn btn-style1">Clear cart</a></li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -128,35 +121,7 @@
                                 <span>Subtotal</span>
                                 <span class="total">$78.44 CAD</span>
                             </div>
-                            <div class="cart-info">
-                                <h4>Shipping info</h4>
-                                <form>
-                                    <label>Country</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option>---</option>
-                                        <option>Afghanistan</option>
-                                        <option>Åland Islands</option>
-                                        <option>Albania</option>
-                                        <option>Algeria</option>
-                                        <option>Andorra</option>
-                                        <option>Angola</option>
-                                        <option>Anguilla</option>
-                                        <option>Antigua & Barbuda</option>
-                                        <option>Argentina</option>
-                                        <option>Armenia</option>
-                                        <option>Aruba</option>
-                                        <option>Ascension Island</option>
-                                        <option>Australia</option>
-                                        <option>Austria</option>
-                                        <option>Azerbaijan</option>
-                                        <option>Bahamas</option>
-                                        <option>Bahrain</option>
-                                    </select>
-                                    <label>Zip/postal code</label>
-                                    <input type="text" name="code" placeholder="Zip/postal code">
-                                </form>
-                                <a href="javascript:void(0)" class="btn btn-style1 cart-calculate">Calculate</a>
-                            </div>
+
                             <div class="shop-total">
                                 <span>Total</span>
                                 <span class="total-amount">$78.44 CAD</span>

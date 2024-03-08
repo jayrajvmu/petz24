@@ -27,4 +27,9 @@ class Home extends BaseController
     {
         return view('cart');
     }
+    public function wishlist()
+    {
+        return view('wishlist');
+    }
+    
 }

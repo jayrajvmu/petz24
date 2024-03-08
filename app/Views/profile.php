@@ -17,7 +17,9 @@
                         <div class="profile">
                             <div class="order-pro">
                                 <div class="pro-img">
-                                    <a href="javascript:void(0)"><img src="<?php echo base_url();?>assets/img/proffessor.jpg" alt="img" class="img-fluid" width="90px" height="90px"></a>
+                                    <a href="javascript:void(0)"><img
+                                            src="<?php echo base_url();?>assets/img/proffessor.jpg" alt="img"
+                                            class="img-fluid" width="90px" height="90px"></a>
                                 </div>
                                 <div class="order-name">
                                     <h4>Sergio Marquina</h4>
@@ -28,6 +30,11 @@
                                 <ul class="profile-ul">
                                     <li class="profile-li"><a href="#" class="active profilee">Profile</a></li>
                                     <li class="profile-li"><a href="#" class="addresss">Address</a></li>
+                                    <li class="profile-li"><a href="#" class="order">Order</a></li>
+                                    <li class="profile-li"><a href="#" class="wishlist">Wishlist</a></li>
+                                    <li class="profile-li"><a href="#" class="cart">Cart</a></li>
+
+
                                 </ul>
                             </div>
                         </div>
@@ -76,53 +83,96 @@
                         </div>
                         <div class="profile-form d-none" id="address">
                             <form>
-                            <ul class="pro-input-label">
-            <li>
-                <label>Address</label>
-                <input type="text" name="address" placeholder="Address">
-            </li>
-            <li>
-                <label>City</label>
-                <input type="text" name="city" placeholder="City">
-            </li>
-        </ul>
-        <ul class="pro-input-label">
-            <li>
-                <label>State</label>
-                <input type="text" name="state" placeholder="State">
-            </li>
-            <li>
-                <label>Pin code</label>
-                <input type="text" name="pincode" placeholder="Pin code">
-            </li>
-        </ul>
+                                <ul class="pro-input-label">
+                                    <li>
+                                        <label>Address</label>
+                                        <input type="text" name="address" placeholder="Address">
+                                    </li>
+                                    <li>
+                                        <label>City</label>
+                                        <input type="text" name="city" placeholder="City">
+                                    </li>
+                                </ul>
+                                <ul class="pro-input-label">
+                                    <li>
+                                        <label>State</label>
+                                        <input type="text" name="state" placeholder="State">
+                                    </li>
+                                    <li>
+                                        <label>Pin code</label>
+                                        <input type="text" name="pincode" placeholder="Pin code">
+                                    </li>
+                                </ul>
                             </form>
+
+                            <!-- ALREADY ADDEED ADDRESS -->
+                            <div class="order-history my-4">
+                                <div class="profile-wishlist">
+                                    <div class="wishlist-area">
+                                        <div class="wishlist-details">
+                                            <div class="wishlist-item">
+                                                <span class="wishlist-head">Address</span>
+                                                <span class="wishlist-items">3 item</span>
+                                            </div>
+                                            <div class="wishlist-all-pro">
+                                                <div class="wishlist-pro">
+                                                    <div class="pro-details">
+                                                        <span class="all-size"> John Smith</span>
+                                                        <span class="wishlist-text">123 Main Street, Anytown, USA</span>
+                                                    </div>
+                                                </div>
+                                                <div class="qty-item">
+                                                    <a href="cart.html" class="add-wishlist">Edit</a>
+                                                    <a href="checkout-1.html" class="add-wishlist">Remove</a>
+                                                </div>
+                                            </div>
+                                            <div class="wishlist-all-pro">
+                                                <div class="wishlist-pro">
+                                                    <div class="pro-details">
+                                                        <span class="all-size"> Jane Doe</span>
+                                                        <span class="wishlist-text">456 Elm Street, Apartment 201, Building B, Westwood Heights, New York, NY, 10001, United States</span>
+                                                    </div>
+                                                </div>
+                                                <div class="qty-item">
+                                                    <a href="cart.html" class="add-wishlist">Edit</a>
+                                                    <a href="checkout-1.html" class="add-wishlist">Remove</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                   
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </section>
     <?php require('components/footer.php');?>
     <?php require('components/js.php');?>
 
     <script>
-        $(document).ready(function(){
-            $('.addresss').click(function(){
-                $('#profile').addClass('d-none');
-                $('#address').removeClass('d-none').addClass('d-inline');
-                $('.addresss').addClass('active')
-                $('.profilee').removeClass('active')
+    $(document).ready(function() {
+        $('.addresss').click(function() {
+            $('#profile').addClass('d-none');
+            $('#address').removeClass('d-none').addClass('d-inline');
+            $('.addresss').addClass('active')
+            $('.profilee').removeClass('active')
 
-            });
-
-            $('.profilee').click(function(){
-                $('#address').addClass('d-none');
-                $('#profile').removeClass('d-none').addClass('d-inline');
-                $('.profilee').addClass('active')
-                $('.addresss').removeClass('active')
-            });
         });
+
+        $('.profilee').click(function() {
+            $('#address').addClass('d-none');
+            $('#profile').removeClass('d-none').addClass('d-inline');
+            $('.profilee').addClass('active')
+            $('.addresss').removeClass('active')
+        });
+    });
     </script>
 </body>
+
 </html>

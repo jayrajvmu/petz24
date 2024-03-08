@@ -193,3 +193,9 @@
 .btn:hover {
     color: #fff !important;
 }
+
+
+.all-filter .categories-page-filter ul.all-option {
+   
+    border-top: 0px solid transparent !important;
+}

@@ -77,48 +77,6 @@
                                 </price-range>
                             </ul>
                         </div>
-                        <div class="pro-size">
-                            <h4 class="filter-title">Filter by size</h4>
-                            <a href="#size-filter" data-bs-toggle="collapse" class="filter-link"><span>Filter by size
-                                </span><i class="fa fa-angle-down"></i></a>
-                            <ul class="all-size collapse" id="size-filter">
-                                <li class="choice-size">
-                                    <input type="checkbox">
-                                    <label>xxs</label>
-                                </li>
-                                <li class="choice-size">
-                                    <input type="checkbox">
-                                    <label>Extra Small</label>
-                                </li>
-                                <li class="choice-size">
-                                    <input type="checkbox">
-                                    <label>Xs-s</label>
-                                </li>
-                                <li class="choice-size">
-                                    <input type="checkbox">
-                                    <label>Small</label>
-                                </li>
-                                <li class="choice-size">
-                                    <input type="checkbox">
-                                    <label>S-M</label>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="filter-tag">
-                            <h4 class="filter-title">Filter by tags</h4>
-                            <a href="#tags-filter" data-bs-toggle="collapse" class="filter-link"><span>Filter by tags
-                                </span><i class="fa fa-angle-down"></i></a>
-                            <ul class="all-tag collapse" id="tags-filter">
-                                <li class="tag"><a href="petz:;">Chicken</a></li>
-                                <li class="tag"><a href="petz:;">Lamb</a></li>
-                                <li class="tag"><a href="petz:;">Duck</a></li>
-                                <li class="tag"><a href="petz:;">Quail</a></li>
-                                <li class="tag"><a href="petz:;">COD Fish</a></li>
-                                <li class="tag"><a href="petz:;">Salmon</a></li>
-                                <li class="tag"><a href="petz:;">Fish</a></li>
-                                <li class="tag"><a href="petz:;">Milk</a></li>
-                            </ul>
-                        </div>
                         <div class="vendor-filter">
                             <h4 class="filter-title">Filter By Brand</h4>
                             <a href="#vendor" data-bs-toggle="collapse" class="filter-link"><span>Filter by vendor
@@ -158,11 +116,8 @@
                                 <li>
                                     <label>Sort by</label>
                                     <select>
-                                        <option>Relevance</option>
-                                        <option>Price</option>
-                                        <option>Best Seller</option>
-                                        <option>Top Arrival</option>
-                                        <option>New Arrival</option>
+                                        <option>High to low</option>
+                                        <option>Low to High</option>
                                     </select>
                                 </li>
                             </ul>
@@ -188,9 +143,9 @@
                                                 <span class="fw-bold">Pedigree</span>
                                                 <h3><a href="<?php echo base_url();?>product-description">Pedigree Meat & Milk Dry Food</a></h3>
                                                 <div class="rating d-flex space-between">
-                                                    <span>4.5 <i class="fa fa-star c-star"></i><span
+                                                    <span
                                                             class="old-price px-2"><del>760.00 </del></span><span
-                                                            class="new-price">₹684.00 </span></span>
+                                                            class="new-price">₹684.00 </span>
                                                 </div>
 
                                             </div>
@@ -221,9 +176,9 @@
                                                 <span class="fw-bold">Pedigree</span>
                                                 <h3><a href="<?php echo base_url();?>product-description">Pedigree Puppy Chicken - 70gm</a></h3>
                                                 <div class="rating d-flex space-between">
-                                                    <span>4.2 <i class="fa fa-star c-star"></i><span
+                                                    <span
                                                             class="old-price px-2"><del>50.00 </del></span><span
-                                                            class="new-price">40.00 </span></span>
+                                                            class="new-price">40.00 </span>
                                                 </div>
 
                                             </div>
@@ -256,9 +211,9 @@
                                                 <span class="fw-bold">Royal Canin</span>
                                                 <h3><a href="<?php echo base_url();?>product-description">Maxi Puppy Wet Dog Food 140gm</a></h3>
                                                 <div class="rating d-flex space-between">
-                                                    <span>4.0 <i class="fa fa-star c-star"></i><span
+                                                   <span
                                                             class="old-price px-2"><del>145.00 </del></span><span
-                                                            class="new-price">130.00 </span></span>
+                                                            class="new-price">130.00 </span>
                                                 </div>
 
                                             </div>
@@ -289,9 +244,9 @@
                                                 <span class="fw-bold">DOGAHOLIC</span>
                                                 <h3><a href="<?php echo base_url();?>product-description">Milky Chew Chicken 10pcs</a></h3>
                                                 <div class="rating d-flex space-between">
-                                                    <span>5.0 <i class="fa fa-star c-star"></i><span
+                                                    <span
                                                             class="old-price px-2"><del>375.00 </del></span><span
-                                                            class="new-price">337.00 </span></span>
+                                                            class="new-price">337.00 </span>
                                                 </div>
 
                                             </div>
@@ -324,9 +279,9 @@
                                                 <span class="fw-bold">ZEE DOGS</span>
                                                 <h3><a href="<?php echo base_url();?>product-description">Neopro Tangerine Dog Lash</a></h3>
                                                 <div class="rating d-flex space-between">
-                                                    <span>5.0 <i class="fa fa-star c-star"></i><span
+                                                    <span
                                                             class="old-price px-2"><del>2799.00 </del></span><span
-                                                            class="new-price">2519.00 </span></span>
+                                                            class="new-price">2519.00 </span>
                                                 </div>
 
                                             </div>
@@ -357,9 +312,9 @@
                                                 <span class="fw-bold">PET HEAD</span>
                                                 <h3><a href="<?php echo base_url();?>product-description">Furtastic Conditioner 250ml</a></h3>
                                                 <div class="rating d-flex space-between">
-                                                    <span>4.0 <i class="fa fa-star c-star"></i><span
+                                                    <span
                                                             class="old-price px-2"><del>1499.00 </del></span><span
-                                                            class="new-price">1349.00 </span></span>
+                                                            class="new-price">1349.00 </span>
                                                 </div>
 
                                             </div>
@@ -391,9 +346,9 @@
                                                 <span class="fw-bold">GIGWI</span>
                                                 <h3><a href="<?php echo base_url();?>product-description">Regular Comb For Dog & Cats</a></h3>
                                                 <div class="rating d-flex space-between">
-                                                    <span>4.8 <i class="fa fa-star c-star"></i><span
+                                                    <span
                                                             class="old-price px-2"><del>875.00 </del></span><span
-                                                            class="new-price">787.00 </span></span>
+                                                            class="new-price">787.00 </span>
                                                 </div>
 
                                             </div>
@@ -427,9 +382,9 @@
                                                 <span class="fw-bold">M-PETS</span>
                                                 <h3><a href="<?php echo base_url();?>product-description">Oval Slicker Brush For Cats & Dog</a></h3>
                                                 <div class="rating d-flex space-between">
-                                                    <span>5.0 <i class="fa fa-star c-star"></i><span
+                                                    <span
                                                             class="old-price px-2"><del>699.00 </del></span><span
-                                                            class="new-price">629.00 </span></span>
+                                                            class="new-price">629.00 </span>
                                                 </div>
 
                                             </div>
@@ -458,9 +413,9 @@
                                                 <span class="fw-bold">TOPDOG</span>
                                                 <h3><a href="<?php echo base_url();?>product-description">Premium Watermelon Mist Spray 100ml</a></h3>
                                                 <div class="rating d-flex space-between">
-                                                    <span>3.8 <i class="fa fa-star c-star"></i><span
+                                                    <span
                                                             class="old-price px-2"><del>475.00 </del></span><span
-                                                            class="new-price">427.00 </span></span>
+                                                            class="new-price">427.00 </span>
                                                 </div>
 
                                             </div>

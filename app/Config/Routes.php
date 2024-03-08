@@ -16,5 +16,7 @@ $routes->get('product-description', 'Home::productDescription');
 $routes->get('profile', 'Home::profile');
 //Cart
 $routes->get('cart', 'Home::cart');
+//Wishlist
+$routes->get('wishlist', 'Home::wishlist');
 
 

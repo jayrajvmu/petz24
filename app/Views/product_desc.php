@@ -59,14 +59,6 @@
                         </div>
                         <div class="col-lg-6 col-xl-6 col-md-6 col-12 col-xs-12 pro-info">
                             <h4>Pedigree Meat & Milk Dry Puppy Food</h4>
-                            <div class="rating">
-                                <i class="fa fa-star d-star"></i>
-                                <i class="fa fa-star d-star"></i>
-                                <i class="fa fa-star d-star"></i>
-                                <i class="fa fa-star d-star"></i>
-                                <i class="fa fa-star-o"></i>
-                            </div>
-
                             <div class="pro-price">
                                 <span class="new-price">684.00 M.R.P</span>
                                 <span class="old-price"><del>760.00 M.R.P</del></span>
@@ -93,10 +85,10 @@
                                 </div>
                             </div>
                             <div class="pro-btn">
-                                <a href="cart.html" class="btn btn-style1"><i class="fa fa-shopping-bag"></i> Add to
-                                    cart</a>
-                                <a href="checkout-1.html" class="btn btn-style1">Buy now</a>
-                            </div>
+                                    <a href="" class="btn btn-style1"><i class="fa fa-heart"></i></a>
+                                    <a href="" class="btn btn-style1"><i class="fa fa-shopping-bag"></i> Add to cart</a>
+                                    <a href="" class="btn btn-style1 my-2 my-lg-0">Buy now</a>
+                                </div>
 
                         </div>
                     </div>

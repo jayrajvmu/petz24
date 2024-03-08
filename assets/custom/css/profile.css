@@ -48,7 +48,7 @@
     transition: all 0.3s ease-in-out 0s;
 }
 .order-histry-area .order-history .profile .order-his-page ul.profile-ul li.profile-li a:after {
-    background-color: #f5ab1e;
+    background-color: #052a50;
     content: '';
     position: absolute;
     bottom: 50%;
@@ -69,15 +69,15 @@
     transition: all 0.3s ease-in-out 0s;
 }
 .order-histry-area .order-history .profile .order-his-page ul.profile-ul li.profile-li a.active {
-    background-color: #f5ab1e;
+    background-color: #052a50;
     color: #fff;
-    border-color: #f5ab1e;
+    border-color: #052a50;
     -webkit-transition: all 0.3s ease-in-out 0s;
     -o-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
 }
 .order-histry-area .order-history .profile .order-his-page ul.profile-ul li.profile-li a span.pro-count {
-    background-color: #f5ab1e;
+    background-color: #052a50;
     width: 25px;
     height: 25px;
     font-size: 12px;
@@ -119,7 +119,7 @@
     color: #50c6e9;
 }
 .order-histry-area .order-history .order-info .table tbody tr td.delayed {
-    color: #ffb74f;
+    color: #052a50;
 }
 .order-histry-area .order-history .order-info .table tbody tr td.delivered {
     color: #43d9a3;
@@ -251,7 +251,7 @@
     color: #50c6e9;
 }
 .order-histry-area .order-history .profile-tickets .table tbody tr td.delayed {
-    color: #ffb74f;
+    color: #052a50;
 }
 .order-histry-area .order-history .profile-tickets .table tbody tr td.delivered {
     color: #43d9a3;
@@ -283,4 +283,97 @@
 .order-histry-area .order-history .profile .order-his-page ul.profile-ul li.profile-li a.active span.pro-count {
     background-color: #fff;
     color: #333;
+}
+
+
+.wishlist-area{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.wishlist-area:last-child{
+    border-bottom: none;
+}
+.wishlist-area .wishlist-details .wishlist-item{
+    padding: 13px 0px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wishlist-area .wishlist-details .wishlist-item span.wishlist-head{
+    font-size: 16px;
+    font-weight: 700;
+}
+.wishlist-area .wishlist-details .wishlist-item span.c-items{
+    border-bottom: 1px solid #000;
+    margin-bottom: 3px;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .wishlist-pro{
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .wishlist-pro .wishlist-pro-image{
+    margin-right: 15px;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .wishlist-pro .pro-details h4{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .wishlist-pro .pro-details span.all-size{
+    font-size: 14px;
+    margin-top: 8px;
+    font-weight: 600;
+    display: block;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .wishlist-pro .pro-details span.all-size span.pro-size{
+    font-weight: 400;   
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .wishlist-pro .pro-details span.wishlist-text{
+    margin-top: 8px;
+    line-height: 2;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .qty-item{
+    width: 20%;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .qty-item a.add-wishlist{
+    color: #f5ab1e;
+    margin-top: 7px;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .qty-item a.add-wishlist:first-child {
+    margin-top: 0px;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .all-pro-price{
+    width: 20%;
+    text-align: right;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .all-pro-price span.new-price{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.wishlist-area .wishlist-details .wishlist-all-pro .all-pro-price span.old-price{
+    color: #999;
+}
+.wishlist-area .wishlist-details .other-link{
+    margin-top: 20px;
+    padding: 15px 0px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.wishlist-area .wishlist-details .other-link ul.c-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

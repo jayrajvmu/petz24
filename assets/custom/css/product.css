@@ -1417,3 +1417,11 @@
     color: #f5ab1e;
     margin-right: 2px;
 }
+
+.btn-style1 {
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 30px;
+    font-weight: 600;
+    border-radius: 25px;
+}

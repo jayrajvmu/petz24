@@ -72,7 +72,10 @@ idap-pro css
     .header-bottom-area.mobile {
         display: block;
     }
-    .header-bottom-area {
+    .hidden .header-bottom-area {
+        display: block!important;
+    }
+    :not(.hidden) .header-bottom-area { 
         display: none;
     }
     .header-bottom-area .main-menu-area{
