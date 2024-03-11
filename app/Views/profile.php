@@ -85,22 +85,46 @@
                             <form>
                                 <ul class="pro-input-label">
                                     <li>
-                                        <label>Address</label>
-                                        <input type="text" name="address" placeholder="Address">
+                                        <label>First Name</label>
+                                        <input type="text" name="first_name" placeholder="Sergio">
                                     </li>
                                     <li>
-                                        <label>City</label>
-                                        <input type="text" name="city" placeholder="City">
+                                        <label>Last Name</label>
+                                        <input type="text" name="last_name" placeholder="Marquina">
                                     </li>
                                 </ul>
                                 <ul class="pro-input-label">
                                     <li>
-                                        <label>State</label>
-                                        <input type="text" name="state" placeholder="State">
+                                        <label>Ph No</label>
+                                        <input type="text" name="phno" placeholder="8956235412">
                                     </li>
                                     <li>
-                                        <label>Pin code</label>
-                                        <input type="text" name="pincode" placeholder="Pin code">
+                                        <label>Street Address</label>
+                                        <input type="text" name="pincode" placeholder="New york">
+                                    </li>
+                                </ul>
+                                <ul class="pro-input-label">
+
+                                    <li>
+                                        <label>Street Address 2</label>
+                                        <input type="text" name="pincode" placeholder="Venice">
+                                    </li>
+
+                                    <li>
+                                        <label>City</label>
+                                        <input type="text" name="phno" placeholder="Trichy">
+                                    </li>
+                                </ul>
+                                <ul class="pro-input-label">
+
+                                    <li>
+                                        <label>Pin Code</label>
+                                        <input type="text" name="pincode" placeholder="641 407">
+                                    </li>
+
+                                    <li>
+                                        <label>Country</label>
+                                        <input type="text" name="phno" placeholder="India">
                                     </li>
                                 </ul>
                             </form>
@@ -112,36 +136,27 @@
                                         <div class="wishlist-details">
                                             <div class="wishlist-item">
                                                 <span class="wishlist-head">Address</span>
-                                                <span class="wishlist-items">3 item</span>
+
                                             </div>
-                                            <div class="wishlist-all-pro">
-                                                <div class="wishlist-pro">
-                                                    <div class="pro-details">
-                                                        <span class="all-size"> John Smith</span>
-                                                        <span class="wishlist-text">123 Main Street, Anytown, USA</span>
-                                                    </div>
-                                                </div>
-                                                <div class="qty-item">
-                                                    <a href="cart.html" class="add-wishlist">Edit</a>
-                                                    <a href="checkout-1.html" class="add-wishlist">Remove</a>
-                                                </div>
-                                            </div>
+                                            
                                             <div class="wishlist-all-pro">
                                                 <div class="wishlist-pro">
                                                     <div class="pro-details">
                                                         <span class="all-size"> Jane Doe</span>
-                                                        <span class="wishlist-text">456 Elm Street, Apartment 201, Building B, Westwood Heights, New York, NY, 10001, United States</span>
+                                                        <span class="wishlist-text">456 Elm Street, Apartment 201,
+                                                            Building B, Westwood Heights,<br> New York, NY, 10001, United
+                                                            States<br>7896541320</span>
                                                     </div>
                                                 </div>
                                                 <div class="qty-item">
-                                                    <a href="cart.html" class="add-wishlist">Edit</a>
-                                                    <a href="checkout-1.html" class="add-wishlist">Remove</a>
+                                                    <a href="" class="add-wishlist">Edit</a>
+                                                    <a href="" class="add-wishlist">Remove</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    
-                                   
+
+
                                 </div>
 
                             </div>

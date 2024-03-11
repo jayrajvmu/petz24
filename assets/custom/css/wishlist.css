@@ -91,3 +91,19 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.pro-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 767px){
+    .pro-details {
+        display: inline;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
