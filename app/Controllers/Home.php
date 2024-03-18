@@ -31,5 +31,17 @@ class Home extends BaseController
     {
         return view('wishlist');
     }
+    public function order()
+    {
+        return view('order');
+    }
+    public function checkout()
+    {
+        return view('checkout');
+    }
+    public function about()
+    {
+        return view('about');
+    }
     
 }

@@ -26,9 +26,9 @@
                                             <a href="product.html"><img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/l/i/little_bigpaw_gourmet_tender_turkey_mousse_wet_cat_food.jpg" class="img-fluid" width="200px"alt="image"></a>
                                         </div>
                                         <div class="pro-details">
-                                            <h4><a href="product.html">Vegetable tomato fresh</a></h4>
+                                            <h4><a href="product.html">Cat Dry Food</a></h4>
                                             <span class="pro-size"><span class="size">Size:</span> 5kg</span>
-                                            <span class="pro-shop">Petro demo</span>
+                                            <span class="pro-shop">Dry Food</span>
                                             <span class="cart-pro-price">$384.51 CAD</span>
                                         </div>
                                     </div>
@@ -58,9 +58,9 @@
                                             <a href="product.html"><img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/p/e/pedigree_vegetarian_puppy_adult_dry_food-1_kg.jpg" class="img-fluid" width="200px" alt="image"></a>
                                         </div>
                                         <div class="pro-details">
-                                            <h4><a href="product.html">Fresh healthy food</a></h4>
+                                            <h4><a href="product.html">Pedigree Chicken & Veggies</a></h4>
                                             <span class="pro-size"><span class="size">Size:</span> 5kg</span>
-                                            <span class="pro-shop">Multiwebinfo</span>
+                                            <span class="pro-shop">Dry Food</span>
                                             <span class="cart-pro-price">$230.00 CAD</span>
                                         </div>
                                     </div>
@@ -90,9 +90,9 @@
                                             <a href="product.html"><img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/r/o/royal_canin_shih_tzu_puppy_dry_food_-_1.5_kg_1.jpg" class="img-fluid" width="200px" alt="image"></a>
                                         </div>
                                         <div class="pro-details">
-                                            <h4><a href="product.html">Fresh green orange</a></h4>
+                                            <h4><a href="product.html">Royal Canin Dry Food</a></h4>
                                             <span class="pro-size"><span class="size">Size:</span> 5kg</span>
-                                            <span class="pro-shop">Vegist store</span>
+                                            <span class="pro-shop">Dry Food</span>
                                             <span class="cart-pro-price">$109.20 CAD</span>
                                         </div>
                                     </div>

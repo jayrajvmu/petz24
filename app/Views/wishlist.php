@@ -26,9 +26,9 @@
                                         <a href="product.html"><img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/l/i/little_bigpaw_gourmet_tender_turkey_mousse_wet_cat_food.jpg" class="img-fluid" width="200px" alt="image"></a>
                                     </div>
                                     <div class="pro-details">
-                                        <h4><a href="product.html">Vegetable tomato fresh</a></h4>
+                                        <h4><a href="product.html">Royal canin Cat Food</a></h4>
                                         <span class="all-size">Size: <span class="pro-size">5kg</span></span>
-                                        <span class="wishlist-text">Petro demo</span>
+                                        <span class="wishlist-text">Dry Food</span>
                                     </div>
                                 </div>
                                 <div class="qty-item">
@@ -51,9 +51,9 @@
                                         <a href="product.html"><img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/p/e/pedigree_vegetarian_puppy_adult_dry_food-1_kg.jpg" class="img-fluid" alt="image" width="200px"></a>
                                     </div>
                                     <div class="pro-details">
-                                        <h4><a href="product.html">Fresh healthy food</a></h4>
+                                        <h4><a href="product.html">Pedigree Chcicken & Veggies</a></h4>
                                         <span class="all-size">Size: <span class="pro-size">6kg</span></span>
-                                        <span class="wishlist-text">Multiwebinfo</span>
+                                        <span class="wishlist-text">Dry Food</span>
                                     </div>
                                 </div>
                                 <div class="qty-item">
@@ -75,9 +75,9 @@
                                         <a href="product.html"><img src="https://www.zigly.com/media/catalog/product/cache/c64dae22d3d7308ba9e0f4ad3d9bc2b6/r/o/royal_canin_shih_tzu_puppy_dry_food_-_1.5_kg_1.jpg" class="img-fluid" alt="image" width="200px"></a>
                                     </div>
                                     <div class="pro-details">
-                                        <h4><a href="product.html">Fresh green orange</a></h4>
+                                        <h4><a href="product.html">Pedigree Chicken & Vegetable</a></h4>
                                         <span class="all-size">Size: <span class="pro-size">3kg</span></span>
-                                        <span class="wishlist-text">Vegist store</span>
+                                        <span class="wishlist-text">Dry Food</span>
                                     </div>
                                 </div>
                                 <div class="qty-item">

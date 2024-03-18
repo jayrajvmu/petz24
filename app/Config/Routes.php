@@ -18,5 +18,12 @@ $routes->get('profile', 'Home::profile');
 $routes->get('cart', 'Home::cart');
 //Wishlist
 $routes->get('wishlist', 'Home::wishlist');
+//order
+$routes->get('order', 'Home::order');
+//checkout
+$routes->get('checkout', 'Home::checkout');
+//About ius
+$routes->get('about', 'Home::about');
+
 
 
