@@ -43,5 +43,17 @@ class Home extends BaseController
     {
         return view('about');
     }
+    public function contact()
+    {
+        return view('contact');
+    }
+    public function faq()
+    {
+        return view('faq');
+    }
+    public function privacypolicy()
+    {
+        return view('privacypolicy');
+    }
     
 }

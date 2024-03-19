@@ -22,8 +22,14 @@ $routes->get('wishlist', 'Home::wishlist');
 $routes->get('order', 'Home::order');
 //checkout
 $routes->get('checkout', 'Home::checkout');
-//About ius
+//About us
 $routes->get('about', 'Home::about');
+//Contact us
+$routes->get('contact', 'Home::contact');
+//FAQ
+$routes->get('faq', 'Home::faq');
+//Privacypolicy
+$routes->get('privacypolicy', 'Home::privacypolicy');
 
 
 
