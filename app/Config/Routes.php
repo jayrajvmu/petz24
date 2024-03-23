@@ -30,6 +30,10 @@ $routes->get('contact', 'Home::contact');
 $routes->get('faq', 'Home::faq');
 //Privacypolicy
 $routes->get('privacypolicy', 'Home::privacypolicy');
+//Experience
+$routes->get('experience', 'Home::experience');
+//Grooming
+$routes->get('grooming', 'Home::grooming');
 
 
 

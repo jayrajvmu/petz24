@@ -55,5 +55,13 @@ class Home extends BaseController
     {
         return view('privacypolicy');
     }
+    public function experience()
+    {
+        return view('experience');
+    }
+    public function grooming()
+    {
+        return view('grooming');
+    }
     
 }
