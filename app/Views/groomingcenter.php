@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<?php require('components/head.php')?>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/custom/css/groomingcenter.css">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/custom/css/profile.css">
+
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/responsive.css">
+
+
+<?php require('components/header.php')?>
+
+
+<body class="home-1">
+
+    <section class="section-tb-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="track-area">
+                        <div class="track-main">
+                            <div class="track">
+                                <div class="step active">
+                                    <span class="icon"><i class="fa fa-check"></i></span>
+                                    <span class="text">Select Pets(s)</span>
+                                </div>
+                                <div class="step active">
+                                    <span class="icon"><i class="fa fa-user"></i></span>
+                                    <span class="text">Select Plan</span>
+                                </div>
+                                <div class="step active">
+                                    <span class="icon"><i class="fa fa-truck"></i></span>
+                                    <span class="text">Select Time Slot</span>
+                                </div>
+                                <div class="step active">
+                                    <span class="icon"><i class="fa fa-archive"></i>
+                                    </span> <span class="text">Select Center</span>
+                                </div>
+                                <div class="step active">
+                                    <span class="icon"><i class="fa fa-archive"></i>
+                                    </span> <span class="text">Review Booking</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ALREADY ADDED PET START-->
+                    <div class="existing-pet-wrapper my-5">
+                        <span class="groom-title">Select A Pet You Want Groomed:</span>
+
+                        <div class="row">
+                            <div class="col-lg-4 my-2 my-lg-0">
+                                <div class="existing-pet p-3">
+                                    <div class="edit-delete text-end p-1 m-1">
+                                        <i class="fa fa-pencil mx-2" aria-hidden="true"></i>
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="pets-details-wrapper d-flex justify-content-between align-items-center">
+                                        <div class="pets-image">
+                                            <img src="https://www.zigly.com/static/version1710913419/frontend/Amasty/JetTheme_child/en_US/Zigly_Managepets/images/ava_dog-1.png"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div class="pets-details">
+                                            <span class="pet-name d-block">Julie</span>
+                                            <span class="pet-breed d-block">Indian Spitz</span>
+                                            <span class="pet-age d-block">4 Years 5 Months </span>
+
+
+                                        </div>
+
+                                    </div>
+                                    <a href="petz:;" class="btn btn-style1-custom">Select</a>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 my-2 my-lg-0">
+                                <div class="existing-pet p-3">
+                                    <div class="edit-delete text-end p-1 m-1">
+                                        <i class="fa fa-pencil mx-2" aria-hidden="true"></i>
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="pets-details-wrapper d-flex justify-content-between align-items-center">
+                                        <div class="pets-image">
+                                            <img src="https://www.zigly.com/static/version1710913419/frontend/Amasty/JetTheme_child/en_US/Zigly_Managepets/images/ava_dog-1.png"
+                                                alt="" class="img-fluid">
+                                        </div>
+                                        <div class="pets-details">
+                                            <span class="pet-name d-block">Gwen</span>
+                                            <span class="pet-breed d-block">Golder Retriver</span>
+                                            <span class="pet-age d-block">2 Years 0 Months </span>
+
+
+                                        </div>
+
+                                    </div>
+                                    <a href="petz:;" class="btn btn-style1-custom">Select</a>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-4 my-2 my-lg-0">
+                                <div class="add-pet-wrapper">
+                                    <span class="new-pet-text"><i class="fa fa-plus" aria-hidden="true"></i>Add New
+                                        Pet</span>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ALREADY ADDED PET ENDS -->
+
+                    <!-- Pricing page start -->
+                    <div class='containerrr'>
+                        <div class='carddd'>
+                            <div class='carddd__info' style='background-image: url()'>
+                                <h5 class='carddd__name'>ESSENTIALS PACKAGE</h5>
+                                <p class='card__price' style='color: var(--color05)'>1399.00<span
+                                        class='card__priceSpan'>/75mins</span></p>
+                            </div>
+                            <div class='carddd__content' style='border-color: var(--color05)'>
+                                <div class='carddd__rows'>
+                                    <p class='carddd__row'>Hair Cut</p>
+                                    <p class='carddd__row'>Cleaning Packgage</p>
+                                    <p class='carddd__row'>Face & Feet Trin</p>
+                                </div>
+                                <a href='#emptyLink' class='carddd__link'
+                                    style='background-color: var(--color02)'>Select</a>
+                            </div>
+                        </div>
+
+                        <div class='carddd'>
+                            <div class='carddd__info' style='background-image: url()'>
+                                <h5 class='carddd__name'>ALL IN ONE PACKAGE</h5>
+                                <p class='card__price' style='color: var(--color05)'>2099.00<span
+                                        class='card__priceSpan'>/120mins</span></p>
+                            </div>
+                            <div class='carddd__content' style='border-color: var(--color05)'>
+                                <div class='carddd__rows'>
+                                    <p class='carddd__row'>Hair Cut</p>
+                                    <p class='carddd__row'>Cleaning Packgage</p>
+                                    <p class='carddd__row'>Face & Feet Trin</p>
+                                </div>
+                                <a href='#emptyLink' class='carddd__link'
+                                    style='background-color: var(--color02)'>Select</a>
+                            </div>
+                        </div>
+                        <div class='carddd'>
+                            <div class='carddd__info' style='background-image: url()'>
+                                <h5 class='carddd__name'>CUSTOMIZED PACKAGE</h5>
+                                <p class='card__price' style='color: var(--color05)'>4099.00<span
+                                        class='card__priceSpan'></span></p>
+                            </div>
+                            <div class='carddd__content' style='border-color: var(--color05)'>
+                                <div class='carddd__rows'>
+                                    <p class='carddd__row'>Hair Cut</p>
+                                    <p class='carddd__row'>Cleaning Packgage</p>
+                                    <p class='carddd__row'>Face & Feet Trin</p>
+                                </div>
+                                <a href='#emptyLink' class='carddd__link'
+                                    style='background-color: var(--color02)'>Select</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- pricing page ends -->
+
+
+                </div>
+            </div>
+            <!-- TIME SLOT START -->
+            <div class="row">
+                <div class="col-lg-6">
+
+                </div>
+                <div class="col-lg-6">
+
+                </div>
+            </div>
+            <!-- TIME SLOT ENDS -->
+
+
+            <!-- SELECT CENTER START -->
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="center-wrapper m-2 p-4">
+                        <span>New Delhi</span>
+                        <span>A-1, Ground Floor, Block A, Kailash Colony, Near Kailash Colony Metro Station - Metro
+                            Pillar No. 89
+                            Delhi - 110048</span>
+                        <a href="petz:;" class="btn btn-style1-custom">Select</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="center-wrapper m-2 p-4">
+                        <span>New Delhi</span>
+                        <span>A-1, Ground Floor, Block A, Kailash Colony, Near Kailash Colony Metro Station - Metro
+                            Pillar No. 89
+                            Delhi - 110048</span>
+                        <a href="petz:;" class="btn btn-style1-custom">Select</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="center-wrapper m-2 p-4">
+                        <span>New Delhi</span>
+                        <span>A-1, Ground Floor, Block A, Kailash Colony, Near Kailash Colony Metro Station - Metro
+                            Pillar No. 89
+                            Delhi - 110048</span>
+                        <a href="petz:;" class="btn btn-style1-custom">Select</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="center-wrapper m-2 p-4">
+                        <span>New Delhi</span>
+                        <span>A-1, Ground Floor, Block A, Kailash Colony, Near Kailash Colony Metro Station - Metro
+                            Pillar No. 89
+                            Delhi - 110048</span>
+                        <a href="petz:;" class="btn btn-style1-custom">Select</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="center-wrapper m-2 p-4">
+                        <span>New Delhi</span>
+                        <span>A-1, Ground Floor, Block A, Kailash Colony, Near Kailash Colony Metro Station - Metro
+                            Pillar No. 89
+                            Delhi - 110048</span>
+                        <a href="petz:;" class="btn btn-style1-custom">Select</a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- SELECT CENTER ENDS -->
+
+
+            <!-- REVIEW SECTION START -->
+
+
+            <!-- REVIEW SECTION ENDS -->
+        </div>
+    </section>
+
+
+
+
+
+
+    <?php require('components/footer.php')?>
+    <?php require('components/js.php')?>
+</body>
+
+</html>

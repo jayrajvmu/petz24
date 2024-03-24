@@ -32,8 +32,11 @@ $routes->get('faq', 'Home::faq');
 $routes->get('privacypolicy', 'Home::privacypolicy');
 //Experience
 $routes->get('experience', 'Home::experience');
-//Grooming
-$routes->get('grooming', 'Home::grooming');
+//Add Pet
+$routes->get('addpet', 'Home::addpet');
+//Grooming Center
+$routes->get('groomingcenter', 'Home::groomingcenter');
+
 
 
 

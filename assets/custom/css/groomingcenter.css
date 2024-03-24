@@ -1,0 +1,346 @@
+/* track page css */
+.track-area .track-price ul.track-order{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.track-area .track-price ul.track-order li h4{
+    font-size: 16px;
+}
+.track-area .track-price ul.track-order li span.track-status{
+    font-size: 16px;
+    font-weight: 600;
+}
+.track-area .track-main {
+    margin-top: 30px;
+    padding-top: 8px;
+    border-top: 1px solid #eee;
+}
+.track-area .track-main .track{
+    position: relative;
+    height: 7px;
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 40px
+}
+.track-area .track-main .track:before {
+    background-color: #ddd;
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 100%;
+    height: 7px;
+}
+.track-area .track-main .track .step{
+    width: 25%;
+    margin-top: -18px;
+    text-align: center;
+    position: relative
+}
+.track-area .track-main .track .step.active:before{
+    background-color: #f5ab1e;
+}
+.track-area .track-main .track .step::before {
+    height: 7px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    top: 18px
+}
+.track-area .track-main .track .step.active .icon{
+    background-color: #f5ab1e;
+    color: #fff
+}
+.track-area .track-main .track .icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    border-radius: 100%;
+    background: #ddd
+}
+.track-area .track-main .track .step.active .text{
+    font-weight: 400;
+    color: #000
+}
+.track-area .track-main .track .text{
+    display: block;
+    margin-top: 7px
+}
+
+.groom-title{
+    font-size: 20PX;
+    text-transform: capitalize;
+    display: block;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-weight: 600;
+    color: #052a50;
+}
+
+.existing-pet{
+    width: 266px;
+    height: 233px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+
+}
+.add-pet-wrapper{
+    width: 266px;
+    height: 233px;
+    border: 2px dashed #18376240;
+    border-radius: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.new-pet-text{
+    font-size: 15px;
+    font-weight: 600;
+    color: #052a50;
+}
+
+.pets-details-wrapper{
+    border-bottom: 1px solid #cdcdcd;
+    margin: 1px  5px;
+    padding-bottom: 20px;
+}
+.pets-details{
+    line-height: 1.7rem;
+}
+
+.pet-name{
+    font-size: 15px;
+    font-weight: 700;
+    color: #052a50;
+}
+.pet-breed{
+    font-size: 14px;
+    color: #c4c4c4 ;
+}
+.pet-age{
+    font-size: 15px;
+    color: #052a50;
+    font: 700;
+}
+.pet-name::after {
+    content: '\2665';
+    color: red;
+    margin-left: 5px; 
+    width: 15px;
+    height: 15px;
+  }
+
+.fa-trash , .fa-pencil{
+    color: #8D9EAF;
+    cursor: pointer;
+}
+
+
+/* Global Variables */
+:root {
+    --color01: #ffffff;
+    --color02: #502883;
+    --color02Hover: #402068;
+    --color03: #2a2a33;
+    --color04: #00bcd4;
+    --color04Hover: #0096a9;
+    --color05: #ffd400;
+    --color06: #f96e6e;
+    --color06Hover: #f62929;
+    --color07: #0097a7;
+    --color08: #f4f4f4;
+    --color09: #fbfbfb;
+    --color10: #ffd400;
+    --color11: #f96e6f;
+    --color12: #362e42;
+    --color13: #aaa;
+}
+
+
+
+
+
+.containerrr {
+    width: 100%;
+
+    /* Flex */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 300px));
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 644px) {
+    .containerrr {
+        gap: 40px;
+    }
+}
+
+.carddd {
+    width: 300px;
+    min-height: 470px;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carddd:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transform: scale(1.04);
+}
+
+.carddd::before {
+    background-color: var(--color05);
+    color: var(--color02);
+    padding: 20px 35px 10px;
+
+    /* Transform */
+    transform: translate(calc(31px + 35px), -35px) rotate(45deg);
+    transform-origin: top left;
+    
+    content: 'NEW';
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.carddd:nth-of-type(2)::before {
+    background-color: var(--color06);
+    color: var(--color03);
+}
+
+.carddd:nth-of-type(3)::before {
+    background-color: var(--color07);
+    color: var(--color12);
+}
+
+/* Info */
+.carddd__info {
+    width: 100%;
+    height: 130px;
+
+    /* Background */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    /* Position */
+    position: relative;
+    z-index: 0;
+
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carddd__info::before {
+    background-color: var(--color02);
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.carddd:nth-of-type(2) .carddd__info::before {
+    background-color: var(--color03);
+}
+
+.carddd:nth-of-type(3) .carddd__info::before {
+    background-color: var(--color04);
+}
+
+.carddd__name {
+    color: var(--color01);
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.carddd__price {
+    color: var(--color05);
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.carddd__priceSpan {
+    color: var(--color13);
+}
+
+.carddd:nth-of-type(3) .carddd__priceSpan {
+    color: var(--color01);
+}
+
+/* Content */
+.carddd__content {
+    background-color: var(--color09);
+    width: 100%;
+    height: calc(100% - 130px);
+    border-top: solid 2px;
+    border-bottom: solid 2px;
+
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carddd__rows {
+    width: 100%;
+}
+
+.carddd__row {
+    color: var(--color13);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.carddd__row:nth-of-type(odd) {
+    background-color: var(--color08);
+}
+
+.carddd__link {
+    color: var(--color01);
+    padding: 10px 15px;
+    margin: 20px 0;
+    text-decoration: none;
+    border-radius: 50px;
+}
+
+.carddd__link:hover {
+    background-color: var(--color02Hover) !important;
+}
+
+.carddd:nth-of-type(2) .carddd__link:hover {
+    background-color: var(--color06Hover) !important;
+}
+
+.carddd:nth-of-type(3) .carddd__link:hover {
+    background-color: var(--color04Hover) !important;
+}
+
+
+.center-wrapper{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+}
