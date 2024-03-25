@@ -36,6 +36,9 @@ $routes->get('experience', 'Home::experience');
 $routes->get('addpet', 'Home::addpet');
 //Grooming Center
 $routes->get('groomingcenter', 'Home::groomingcenter');
+// Consultation Center
+$routes->get('consultationcenter', 'Home::consultationcenter');
+
 
 
 

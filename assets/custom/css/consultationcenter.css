@@ -1,0 +1,84 @@
+/* track page css */
+.track-area .track-price ul.track-order{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.track-area .track-price ul.track-order li h4{
+    font-size: 16px;
+}
+.track-area .track-price ul.track-order li span.track-status{
+    font-size: 16px;
+    font-weight: 600;
+}
+/* .track-area .track-main {
+    margin-top: 30px;
+    padding-top: 8px;
+    border-top: 1px solid #eee;
+} */
+.track-area .track-main .track{
+    position: relative;
+    height: 7px;
+    display: flex;
+    margin-bottom: 40px;
+    margin-top: 40px
+}
+.track-area .track-main .track:before {
+    background-color: #ddd;
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+    width: 50%;
+    height: 7px;
+}
+.track-area .track-main .track .step{
+    width: 25%;
+    margin-top: -18px;
+    text-align: center;
+    position: relative
+}
+.track-area .track-main .track .step.active:before{
+    background-color: #f5ab1e;
+}
+.track-area .track-main .track .step::before {
+    height: 7px;
+    position: absolute;
+    content: "";
+    width: 100%;
+    left: 0;
+    top: 18px
+}
+.track-area .track-main .track .step.active .icon{
+    background-color: #f5ab1e;
+    color: #fff
+}
+.track-area .track-main .track .icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    border-radius: 100%;
+    background: #ddd
+}
+.track-area .track-main .track .step.active .text{
+    font-weight: 400;
+    color: #000
+}
+.track-area .track-main .track .text{
+    display: block;
+    margin-top: 7px
+}
+
+.btn-style1-custom-1{
+    color: #fff;
+    width: 94px;
+    font-size: 14px;
+    padding: 4px 20px;
+    background-color: #052a50;
+    font-weight: 600;
+    border: 2px solid #052a50;
+    height: 32px;
+    border-radius: 25px;
+}

@@ -236,11 +236,50 @@
             <!-- SELECT CENTER ENDS -->
 
 
-            <!-- REVIEW SECTION START -->
 
-
-            <!-- REVIEW SECTION ENDS -->
         </div>
+        <!-- REVIEW SECTION START -->
+
+        <div class="container bg-F9F9EB p-5 my-3">
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="row">
+                <div class="left-side-wrapper">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="package-wrapper d-flex justify-content-center align-items-center flex-column">
+                                <img src="https://www.zigly.com/media/plan/feature/Essential_Package.png" alt="" class="img-fluid d-block my-2">
+                                <span class="package-name d-block my-2">ESSENTIALS PACKAGE</span>
+                                <span class="duration d-block my-2"><i class="fa fa-clock-o px-2" aria-hidden="true"></i> 75Mins</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="other-detail">
+                                <span class="pet-name-review d-block">For Julie</span>
+                                <span class="booking-date d-block"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> DATE: 26 MAR '24</span>
+                                <span class="booking-time d-block"><i class="fa fa-clock-o" aria-hidden="true"></i> TIME: 10:00 AM</span>
+                                <span class="booking-place"><i class="fa fa-map-marker" aria-hidden="true"></i> CENTER:</span>
+                                <span class="center-address">S-4, Green Park (Ground Floor), Main Market New Delhi, Delhi, Delhi - 110016</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 border-lefttt my-3 my-lg-0">
+            <div class="booking-amount d-flex justify-content-between align-items-center flex-column">
+                <span class="amount-text mb-2">Amount</span>
+                <span class="amount">₹1,399.00</span>
+            </div>
+            <a href="petz:;" class="btn btn-style1-custom my-5">Make Payment</a>
+
+        </div>
+    </div>
+</div>
+
+
+
+        <!-- REVIEW SECTION ENDS -->
     </section>
 
 

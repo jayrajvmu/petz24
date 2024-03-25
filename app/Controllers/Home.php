@@ -67,6 +67,10 @@ class Home extends BaseController
     {
         return view('groomingcenter');
     }
+    public function consultationcenter()
+    {
+        return view('consultationcenter');
+    }
 
     
 }
