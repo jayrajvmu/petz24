@@ -352,8 +352,16 @@
     line-height: 1.7rem;
 }
 
-.booking-payment{
-    
+.btn-style1-custom-1{
+    color: #fff;
+    width: 94px;
+    font-size: 14px;
+    padding: 4px 20px;
+    background-color: #052a50;
+    font-weight: 600;
+    border: 2px solid #052a50;
+    height: 32px;
+    border-radius: 25px;
 }
 
 .package-name{

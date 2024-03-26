@@ -51,8 +51,10 @@
                                                 <i class="fa fa-angle-down"></i>
                                             </a>
                                             <ul class="f-link-ul collapse" id="services" data-bs-parent="#footer-accordian">
-                                                <li class="f-link-ul-li"><a href="about-us.html">Pet Grooming</a></li>
-                                                <li class="f-link-ul-li"><a href="faq%27s.html">Vet Consultation</a></li>
+                                                <li class="f-link-ul-li"><a href="<?php echo base_url();?>groomingcenter">Pet Grooming</a></li>
+                                                <li class="f-link-ul-li"><a href="<?php echo base_url();?>consultationcenter">Vet Consultation</a></li>
+                                                <li class="f-link-ul-li"><a href="<?php echo base_url();?>addpet">Add Pet</a></li>
+
                                                 <li class="f-link-ul-li"><a href="contact.html">Training</a></li>
                                             </ul>
                                         </div>
