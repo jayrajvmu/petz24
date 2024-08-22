@@ -475,6 +475,7 @@
                                         </div>
                                     </li>
                                     <li class="side-wrap cart-wrap">
+
                                         <div class="shopping-widget">
                                             <div class="shopping-cart">
                                                 <a href="<?php echo base_url();?>profile" class="cart-count">
