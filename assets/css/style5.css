@@ -405,7 +405,8 @@ body.hidden {
 .top-menu{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: center;
 }
 /* main-menu css */
 .megamenu-content .mainwrap ul.main-menu {

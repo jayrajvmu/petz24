@@ -14,6 +14,7 @@
             <div class="row">
                 <div class="col">
                     <div class="order-history">
+
                         <div class="profile">
                             <div class="order-pro">
                                 <div class="pro-img">
@@ -22,77 +23,50 @@
                                             class="img-fluid" width="90px" height="90px"></a>
                                 </div>
                                 <div class="order-name">
-                                    <h4>Sergio Marquina</h4>
+                                    <h4><?= $user_data->first_name; ?> <?= $user_data->last_name; ?> <i class='fa fa-edit c-pointer'></i></h4>
                                     <span>Joined April 06, 2024</span>
                                 </div>
                             </div>
                             <div class="order-his-page">
                                 <ul class="profile-ul">
                                     <li class="profile-li"><a href="#" class="active profilee">Profile</a></li>
-                                    <li class="profile-li"><a href="#" class="addresss">Address</a></li>
-                                    <li class="profile-li"><a href="#" class="order">Order</a></li>
+                                    <!-- <li class="profile-li"><a href="#" class="addresss">Address</a></li> -->
+                                    <li class="profile-li"><a href="#" class="orderr">Order</a></li>
                                     <li class="profile-li"><a href="#" class="wishlist">Wishlist</a></li>
-                                    <li class="profile-li"><a href="#" class="cart">Cart</a></li>
-
-
                                 </ul>
                             </div>
                         </div>
+
                         <div class="profile-form" id="profile">
                             <form>
                                 <ul class="pro-input-label">
                                     <li>
                                         <label>First name</label>
-                                        <input type="text" name="name" placeholder="First name">
+                                        <input disabled value="<?= $user_data->first_name; ?>" type="text" name="name" placeholder="First name">
                                     </li>
                                     <li>
                                         <label>Last name</label>
-                                        <input type="text" name="name" placeholder="Last name">
+                                        <input disabled value="<?= $user_data->last_name; ?>" type="text" name="name" placeholder="Last name">
                                     </li>
                                 </ul>
                                 <ul class="pro-input-label">
                                     <li>
                                         <label>Email address</label>
-                                        <input type="text" name="name" placeholder="Email address" required>
+                                        <input disabled value="<?= $user_data->email_id; ?>" type="text" name="name" placeholder="Email address" required>
                                     </li>
                                     <li>
                                         <label>Phone number</label>
-                                        <input type="text" name="name" placeholder="Phone number">
-                                    </li>
-                                </ul>
-                                <ul class="pro-input-label">
-                                    <li>
-                                        <label>New password</label>
-                                        <input type="text" name="name" placeholder="New password">
-                                    </li>
-                                    <li>
-                                        <label>Confirm password</label>
-                                        <input type="text" name="name" placeholder="Confirm password">
-                                    </li>
-                                </ul>
-                                <ul class="pro-submit">
-                                    <li>
-                                        <input type="checkbox" name="name">
-                                        <label>Subscribe me to newsletter</label>
-                                    </li>
-                                    <li>
-                                        <a href="profile.html" class="btn btn-style1">Update profile</a>
+                                        <input disabled value="<?= $user_data->mobile_number; ?>" type="text" name="name" placeholder="Phone number">
                                     </li>
                                 </ul>
                             </form>
                         </div>
+
                         <div class="profile-form d-none" id="address">
+
+                            msgfmt_get_pattern
+
                             <form>
-                                <ul class="pro-input-label">
-                                    <li>
-                                        <label>First Name</label>
-                                        <input type="text" name="first_name" placeholder="Sergio">
-                                    </li>
-                                    <li>
-                                        <label>Last Name</label>
-                                        <input type="text" name="last_name" placeholder="Marquina">
-                                    </li>
-                                </ul>
                                 <ul class="pro-input-label">
                                     <li>
                                         <label>Ph No</label>
@@ -161,14 +135,16 @@
 
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
         </div>
     </section>
+    
     <?php require('components/footer.php');?>
-    <?php require('components/js.php');?>
+    <?php require('imports/js.php');?>
 
     <script>
     $(document).ready(function() {

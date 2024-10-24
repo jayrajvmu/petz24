@@ -1,17 +1,34 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\MenuModel;
 
-class Home extends BaseController
+class BaseAction extends BaseController
 {
-    public function index(): string
+
+    public function __construct()
     {
-        return view('index');
+        $this->menuModel = new MenuModel();  // Load the menu model
+    }
+    
+    public function index()
+    {
+        $data['menuItems'] = $this->menuModel->getMenuWithCategoryAndBrand();
+        return view('index', $data);  // Pass the menu items to the view
+        // return view('index');
     }
 
-    public function product()
+    public function product($pet_name, $type_name, $category_name)
     {
-        return view('product');
+
+        $data['menuItems'] = $this->menuModel->getMenuWithCategoryAndBrand();
+        $params['petName']=$pet_name;
+        $params['typeName']=$type_name;
+        $params['categoryName']=$category_name;
+
+        $data['parameter'] = $params;
+
+        return view('product', $data);  // Pass the menu items to the view
     }
 
     public function productDescription()
@@ -21,6 +38,10 @@ class Home extends BaseController
 
     public function profile()
     {
+        // if(!$this->session->get('user_data')){
+        //     return redirect()->route('/'); 
+        // }
+        // $data['user_data'] = $this->decryptData($this->session->get('user_data'));
         return view('profile');
     }
     public function cart()

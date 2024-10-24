@@ -1,0 +1,921 @@
+CRITICAL - 2024-10-19 07:04:40 --> ErrorException: Undefined variable $menuItems
+in APPPATH\Views\components\header.php on line 53.
+ 1 APPPATH\Views\components\header.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menuItems', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\components\\header.php', 53)
+ 2 APPPATH\Views\product_desc.php(7): require('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\components\\header.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product_desc.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product_desc', [], true)
+ 6 APPPATH\Controllers\BaseAction.php(29): view('product_desc')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->productDescription()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-19 07:16:40 --> mysqli_sql_exception: Unknown column 'pet_tbl.pet_flag' in 'where clause' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp\htdocs\projects\petz24\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp\htdocs\projects\petz24\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petz24\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projects\petz24\app\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projects\petz24\app\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+#8 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+#9 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+#10 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-10-19 07:16:40 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_tbl.pet_flag' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_tbl`.`pet_flag` = :pet_tbl.pet_flag:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:16:40 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_tbl.pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_tbl`.`pet_flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_tbl`.`pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_tbl`.`pet_flag` = :pet_tbl.pet_flag:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:16:40 --> [Caused by] mysqli_sql_exception: Unknown column 'pet_tbl.pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_tbl`.`pet_flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_tbl`.`pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_tbl`.`pet_flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_tbl`.`pet_flag` = :pet_tbl.pet_flag:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-19 07:17:04 --> mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp\htdocs\projects\petz24\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp\htdocs\projects\petz24\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petz24\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projects\petz24\app\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projects\petz24\app\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+#8 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+#9 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+#10 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-10-19 07:17:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:04 --> [Caused by] mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-19 07:17:05 --> mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp\htdocs\projects\petz24\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp\htdocs\projects\petz24\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petz24\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projects\petz24\app\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projects\petz24\app\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+#8 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+#9 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+#10 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-10-19 07:17:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:05 --> [Caused by] mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-19 07:17:05 --> mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp\htdocs\projects\petz24\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp\htdocs\projects\petz24\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petz24\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projects\petz24\app\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projects\petz24\app\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+#8 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+#9 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+#10 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-10-19 07:17:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:05 --> [Caused by] mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-19 07:17:06 --> mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp\htdocs\projects\petz24\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp\htdocs\projects\petz24\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petz24\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projects\petz24\app\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projects\petz24\app\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+#8 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+#9 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+#10 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-10-19 07:17:06 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:06 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:06 --> [Caused by] mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-19 07:17:07 --> mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp\htdocs\projects\petz24\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp\htdocs\projects\petz24\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petz24\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projects\petz24\app\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projects\petz24\app\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+#8 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+#9 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+#10 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-10-19 07:17:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:07 --> [Caused by] mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-19 07:17:07 --> mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp\htdocs\projects\petz24\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp\htdocs\projects\petz24\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petz24\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projects\petz24\app\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projects\petz24\app\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+#8 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+#9 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+#10 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-10-19 07:17:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:07 --> [Caused by] mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-19 07:17:07 --> mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp\htdocs\projects\petz24\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp\htdocs\projects\petz24\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petz24\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projects\petz24\app\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projects\petz24\app\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+#8 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+#9 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+#10 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-10-19 07:17:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:07 --> [Caused by] mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-19 07:17:07 --> mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp\htdocs\projects\petz24\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp\htdocs\projects\petz24\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petz24\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projects\petz24\app\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projects\petz24\app\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+#8 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+#9 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+#10 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-10-19 07:17:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:07 --> [Caused by] mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-19 07:17:08 --> mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp\htdocs\projects\petz24\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp\htdocs\projects\petz24\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petz24\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projects\petz24\app\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projects\petz24\app\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+#8 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+#9 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+#10 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-10-19 07:17:08 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:08 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:08 --> [Caused by] mysqli_sql_exception: Unknown column 'pet_flag' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_category_tbl`.`product_category_id` as `product_category_id`, `product_type_tbl`.`product_type_id` as `product_type_id`, `pet_tbl`.`pet_id` as `pet_id`, `pet_tbl`.`pet_name` as `pet_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`, `product_category_tbl`.`flag` as `product_category_flag`, `product_type_tbl`.`flag` as `product_type_flag`, `pet_tbl`.`flag` as `pet_flag`
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_category_tbl`.`product_type_id`
+JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_type_tbl`.`pet_id`
+WHERE `pet_flag` = :pet_flag:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MenuModel.php(30): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:29 --> ErrorException: Undefined array key "pet_img"
+in APPPATH\Models\MenuModel.php on line 85.
+ 1 APPPATH\Models\MenuModel.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pet_img"', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Models\\MenuModel.php', 85)
+ 2 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:30 --> ErrorException: Undefined array key "pet_img"
+in APPPATH\Models\MenuModel.php on line 85.
+ 1 APPPATH\Models\MenuModel.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pet_img"', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Models\\MenuModel.php', 85)
+ 2 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:31 --> ErrorException: Undefined array key "pet_img"
+in APPPATH\Models\MenuModel.php on line 85.
+ 1 APPPATH\Models\MenuModel.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pet_img"', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Models\\MenuModel.php', 85)
+ 2 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:31 --> ErrorException: Undefined array key "pet_img"
+in APPPATH\Models\MenuModel.php on line 85.
+ 1 APPPATH\Models\MenuModel.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pet_img"', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Models\\MenuModel.php', 85)
+ 2 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:31 --> ErrorException: Undefined array key "pet_img"
+in APPPATH\Models\MenuModel.php on line 85.
+ 1 APPPATH\Models\MenuModel.php(85): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "pet_img"', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Models\\MenuModel.php', 85)
+ 2 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 07:17:48 --> ErrorException: Undefined array key "flag"
+in APPPATH\Models\MenuModel.php on line 101.
+ 1 APPPATH\Models\MenuModel.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "flag"', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Models\\MenuModel.php', 101)
+ 2 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-19 08:33:28 --> ErrorException: Undefined variable $product_id
+in APPPATH\Views\product.php on line 443.
+ 1 APPPATH\Views\product.php(443): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product_id', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php', 443)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product', [], true)
+ 5 APPPATH\Controllers\BaseAction.php(28): view('product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->product('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

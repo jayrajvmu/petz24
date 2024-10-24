@@ -199,3 +199,20 @@
    
     border-top: 0px solid transparent !important;
 }
+
+/* #signin_signup_popup .modal-header > .modal-header-content{
+    background-image: url(../images/login_pets.png);
+    width: 300px;
+} */
+
+.c-pointer{
+    cursor: pointer;
+}
+
+.input-group .password-eye{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: large;
+    z-index: 10;
+}

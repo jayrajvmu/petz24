@@ -5,6 +5,7 @@
 
 <body>
 <?php require('components/header.php')?>
+
          <section class="home5-category home5-category-top mt-custom">
             <div class="container">
                 <div class="row">
@@ -12,7 +13,7 @@
                         <div class="row">
                             <div class="col">
                                 <div class="cate-image">
-                                    <a href="<?php echo base_url();?>product">
+                                    <a href="<?= base_url();?>product">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_Dog.jpg" class="img-fluid" alt="cate-image">
                                     </a>
                                     <span class="d-block">Dogs</span> 
@@ -20,7 +21,7 @@
                             </div>
                             <div class="col">
                                 <div class="cate-image">
-                                    <a href="<?php echo base_url();?>product">
+                                    <a href="<?= base_url();?>product">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_Cat.jpg" class="img-fluid" alt="cate-image">
                                     </a>
                                     <span class="d-block">Cats</span>
@@ -28,7 +29,7 @@
                             </div>
                             <div class="col">
                                 <div class="cate-image">
-                                    <a href="<?php echo base_url();?>product">
+                                    <a href="<?= base_url();?>product">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_SmallAnimal.png" class="img-fluid" alt="cate-image">
                                     </a>
                                     <span class="d-block">Small Pets</span>
@@ -36,7 +37,7 @@
                             </div>
                             <div class="col">
                                 <div class="cate-image">
-                                    <a href="<?php echo base_url();?>product">
+                                    <a href="<?= base_url();?>product">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_Bird.png" class="img-fluid" alt="cate-image">
                                     </a>
                                     <span class="d-block">Birds</span>
@@ -44,7 +45,7 @@
                             </div>
                             <div class="col">
                                 <div class="cate-image">
-                                    <a href="<?php echo base_url();?>product">
+                                    <a href="<?= base_url();?>product">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_Vet.jpg" class="img-fluid" alt="cate-image">
                                     </a>
                                     <span class="d-block">Vet Consultation</span>
@@ -52,7 +53,7 @@
                             </div>
                             <div class="col">
                                 <div class="cate-image">
-                                    <a href="<?php echo base_url();?>product">
+                                    <a href="<?= base_url();?>product">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_Blog.jpg" class="img-fluid" alt="cate-image">
                                     </a>
                                     <span class="d-block">Blog</span> 
@@ -60,7 +61,7 @@
                             </div>
                             <div class="col">
                                 <div class="cate-image">
-                                    <a href="<?php echo base_url();?>product">
+                                    <a href="<?= base_url();?>product">
                                         <img src="https://www.zigly.com/media/wysiwyg/Icons_EC.jpg" class="img-fluid" alt="cate-image">
                                     </a>
                                     <span class="d-block">Experience Centers</span>
@@ -153,16 +154,17 @@
             </div>
         </section>
         <!-- category image end -->
+
         <!-- deal of the day start -->
         <section class="deal-day5">
-            <div class="deal5-back" style="background-image: url(<?php echo base_url();?>assets/img/dog-bg.jpg);">
+            <div class="deal5-back" style="background-image: url(<?= base_url();?>assets/img/dog-bg.jpg);">
                 <div class="container">
                     <div class="row">
                         <div class="col">
                             <div class="deal-area5">
                                 <div class="deal-content">
                                     <h2>Chat with Doctor!</h2>
-                                    <span class="deal-slogan mt-4"> Let’s raise healthy and happy pets together.</span>
+                                    <span class="deal-slogan mt-4">Let’s raise healthy and happy pets together.</span>
                                 </div>
                                 <a href="#" class="btn btn-style1">Ask your doubts here</a>
                             </div>
@@ -181,7 +183,7 @@
                         <div class="home-offer-banner">
                             <div class="o-t-banner">
                                 <a href="#" class="image-b">
-                                    <img class="img-fluid" src="<?php echo base_url();?>assets/img/dog.jpg" alt="banner image">
+                                    <img class="img-fluid" src="<?= base_url();?>assets/img/dog.jpg" alt="banner image">
                                 </a>
                                 <div class="o-t-content">
                                     <h6>Dog</h6>
@@ -190,7 +192,7 @@
                             </div>
                             <div class="o-t-banner">
                                 <a href="#" class="image-b">
-                                    <img class="img-fluid" src="<?php echo base_url();?>assets/img/cat.jpg" alt="banner image">
+                                    <img class="img-fluid" src="<?= base_url();?>assets/img/cat.jpg" alt="banner image">
                                 </a>
                                 <div class="o-t-content banner-color">
                                     <h6>Cat</h6>
@@ -199,7 +201,7 @@
                             </div>
                             <div class="o-t-banner">
                                 <a href="#" class="image-b">
-                                    <img class="img-fluid" src="<?php echo base_url();?>assets/img/rabbit.jpg" alt="banner image">
+                                    <img class="img-fluid" src="<?= base_url();?>assets/img/rabbit.jpg" alt="banner image">
                                 </a>
                                 <div class="o-t-content banner-color">
                                     <h6>Rabbit</h6>

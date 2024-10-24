@@ -2,44 +2,55 @@
 
 use CodeIgniter\Router\RouteCollection;
 
-/**
- * @var RouteCollection $routes
- */
-$routes->get('/', 'Home::index');
+$routes->get('/', 'BaseAction::index');
 
-
-//productpage
-$routes->get('product', 'Home::product');
-//product description
-$routes->get('product-description', 'Home::productDescription');
+/*====[ Product Module ]=====*/
+// $routes->get('product', 'BaseAction::product');
+// $routes->get('product/(:any)', 'BaseAction::product/$1');
+$routes->get('product/(:any)/(:any)/(:any)', 'BaseAction::product/$1/$2/$3');
+$routes->get('product-description', 'BaseAction::productDescription');
 //Profile
-$routes->get('profile', 'Home::profile');
+$routes->get('profile', 'BaseAction::profile');
 //Cart
-$routes->get('cart', 'Home::cart');
+$routes->get('cart', 'BaseAction::cart');
 //Wishlist
-$routes->get('wishlist', 'Home::wishlist');
+$routes->get('wishlist', 'BaseAction::wishlist');
 //order
-$routes->get('order', 'Home::order');
+$routes->get('order', 'BaseAction::order');
 //checkout
-$routes->get('checkout', 'Home::checkout');
+$routes->get('checkout', 'BaseAction::checkout');
 //About us
-$routes->get('about', 'Home::about');
+$routes->get('about', 'BaseAction::about');
 //Contact us
-$routes->get('contact', 'Home::contact');
+$routes->get('contact', 'BaseAction::contact');
 //FAQ
-$routes->get('faq', 'Home::faq');
+$routes->get('faq', 'BaseAction::faq');
 //Privacypolicy
-$routes->get('privacypolicy', 'Home::privacypolicy');
+$routes->get('privacypolicy', 'BaseAction::privacypolicy');
 //Experience
-$routes->get('experience', 'Home::experience');
+$routes->get('experience', 'BaseAction::experience');
 //Add Pet
-$routes->get('addpet', 'Home::addpet');
+$routes->get('addpet', 'BaseAction::addpet');
 //Grooming Center
-$routes->get('groomingcenter', 'Home::groomingcenter');
+$routes->get('groomingcenter', 'BaseAction::groomingcenter');
 // Consultation Center
-$routes->get('consultationcenter', 'Home::consultationcenter');
+$routes->get('consultationcenter', 'BaseAction::consultationcenter');
+
+###########################[ API Routes ]##################################
+# User Signin
+$routes->post('signinuser', 'Workflow_User::signinUser');
+
+# User Signup
+$routes->post('insertuser', 'Workflow_User::signupUser');
 
 
 
+# product route AJAX
 
+# Pet
+$routes->get('getproduct', 'Workflow_Product::getProduct');
+$routes->post('getspecificproduct', 'Workflow_Product::getSpecificProduct');
+// $routes->post('insertpet', 'Workflow_Pet::insertPet');
+// $routes->post('updatepet', 'Workflow_Pet::updatePet');
+// $routes->post('deletepet', 'Workflow_Pet::deletePet');
 

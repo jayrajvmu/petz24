@@ -21,6 +21,7 @@ use Psr\Log\LoggerInterface;
  */
 abstract class BaseController extends Controller
 {
+    
     /**
      * Instance of the main Request object.
      *
@@ -46,6 +47,11 @@ abstract class BaseController extends Controller
     /**
      * @return void
      */
+
+    protected $session = null;
+	protected $db;
+    protected $userData;
+
     public function initController(RequestInterface $request, ResponseInterface $response, LoggerInterface $logger)
     {
         // Do Not Edit This Line
@@ -53,6 +59,43 @@ abstract class BaseController extends Controller
 
         // Preload any models, libraries, etc, here.
 
-        // E.g.: $this->session = \Config\Services::session();
+        $this->session = \Config\Services::session();
+
+        $this->db = db_connect();
+    } 
+
+    public function response_message($messData){
+
+
+        if(!$messData || !$messData['code'] ){
+            return json_encode([
+                "code" => 400,
+                "msg" => "Something went wrong!"
+            ]);
+        }
+
+        return json_encode($messData);
     }
+
+    public function encryptData($data){
+        return base64_encode(json_encode($data));
+    }
+
+    public function decryptData($data){
+        return json_decode(base64_decode($data));
+    }
+
+
+    public $validationRule = [
+        'userfile' => [
+            'label' => 'Image File',
+            'rules' => [
+                'uploaded[userfile]',
+                'is_image[userfile]',
+                'mime_in[userfile,image/jpg,image/jpeg,image/gif,image/png,image/webp]',
+                'max_size[userfile,100]',
+                'max_dims[userfile,1024,768]',
+            ],
+        ],
+    ];
 }

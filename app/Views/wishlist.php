@@ -9,7 +9,7 @@
 <?php require('components/header.php')?>
 
 
-<body class="home-1"> q
+<body class="home-1"> 
 <section class="wishlist-page section-tb-padding">
         <div class="container">
             <div class="row">

@@ -1,0 +1,747 @@
+CRITICAL - 2024-10-20 04:23:24 --> ErrorException: Array to string conversion
+in APPPATH\Views\product.php on line 443.
+ 1 APPPATH\Views\product.php(443): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php', 443)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product', [], true)
+ 5 APPPATH\Controllers\BaseAction.php(31): view('product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->product('dog', 'food', 'dry-food')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 04:23:24 --> ErrorException: Array to string conversion
+in APPPATH\Views\product.php on line 443.
+ 1 APPPATH\Views\product.php(443): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php', 443)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product', [], true)
+ 5 APPPATH\Controllers\BaseAction.php(31): view('product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->product('dog', 'food', 'dry-food')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 04:24:03 --> ErrorException: Array to string conversion
+in APPPATH\Views\product.php on line 443.
+ 1 APPPATH\Views\product.php(443): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php', 443)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product', [], true)
+ 5 APPPATH\Controllers\BaseAction.php(31): view('product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->product('dog', 'food', 'dry-food')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 04:25:01 --> ErrorException: Array to string conversion
+in APPPATH\Views\product.php on line 443.
+ 1 APPPATH\Views\product.php(443): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php', 443)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product', [], true)
+ 5 APPPATH\Controllers\BaseAction.php(31): view('product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->product('dog', 'food', 'dry-food')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 04:25:43 --> ErrorException: Array to string conversion
+in APPPATH\Views\product.php on line 440.
+ 1 APPPATH\Views\product.php(440): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php', 440)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product', [], true)
+ 5 APPPATH\Controllers\BaseAction.php(31): view('product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->product('dog', 'food', 'dry-food')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 04:25:53 --> ErrorException: Array to string conversion
+in APPPATH\Views\product.php on line 440.
+ 1 APPPATH\Views\product.php(440): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php', 440)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product', [], true)
+ 5 APPPATH\Controllers\BaseAction.php(31): view('product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->product('dog', 'food', 'dry-food')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 04:25:54 --> ErrorException: Array to string conversion
+in APPPATH\Views\product.php on line 440.
+ 1 APPPATH\Views\product.php(440): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php', 440)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product', [], true)
+ 5 APPPATH\Controllers\BaseAction.php(31): view('product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->product('dog', 'food', 'dry-food')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 04:25:54 --> ErrorException: Array to string conversion
+in APPPATH\Views\product.php on line 440.
+ 1 APPPATH\Views\product.php(440): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php', 440)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product', [], true)
+ 5 APPPATH\Controllers\BaseAction.php(31): view('product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->product('dog', 'food', 'dry-food')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 04:26:04 --> ErrorException: Array to string conversion
+in APPPATH\Views\product.php on line 440.
+ 1 APPPATH\Views\product.php(440): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php', 440)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product', [], true)
+ 5 APPPATH\Controllers\BaseAction.php(31): view('product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->product('dog', 'food', 'dry-food')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 04:26:05 --> ErrorException: Array to string conversion
+in APPPATH\Views\product.php on line 440.
+ 1 APPPATH\Views\product.php(440): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php', 440)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product', [], true)
+ 5 APPPATH\Controllers\BaseAction.php(31): view('product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->product('dog', 'food', 'dry-food')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 04:26:05 --> ErrorException: Array to string conversion
+in APPPATH\Views\product.php on line 440.
+ 1 APPPATH\Views\product.php(440): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php', 440)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product', [], true)
+ 5 APPPATH\Controllers\BaseAction.php(31): view('product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->product('dog', 'food', 'dry-food')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 04:26:06 --> ErrorException: Array to string conversion
+in APPPATH\Views\product.php on line 440.
+ 1 APPPATH\Views\product.php(440): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php', 440)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product', [], true)
+ 5 APPPATH\Controllers\BaseAction.php(31): view('product', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->product('dog', 'food', 'dry-food')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 04:59:17 --> ErrorException: Undefined variable $menuItems
+in APPPATH\Views\components\header.php on line 53.
+ 1 APPPATH\Views\components\header.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menuItems', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\components\\header.php', 53)
+ 2 APPPATH\Views\product_desc.php(7): require('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\components\\header.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product_desc.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product_desc', [], true)
+ 6 APPPATH\Controllers\BaseAction.php(36): view('product_desc')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->productDescription()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 05:57:00 --> ErrorException: require(components/js.php): Failed to open stream: No such file or directory
+in APPPATH\Views\product.php on line 433.
+ 1 APPPATH\Views\product.php(433): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(components/js.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php', 433)
+ 2 APPPATH\Views\product.php(433): require()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product', [], true)
+ 6 APPPATH\Controllers\BaseAction.php(31): view('product', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->product('dog', 'food', 'dry-food')
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 06:02:36 --> Error: Class "App\Models\ProductModel" not found
+in APPPATH\Controllers\Workflow_Product.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Workflow_Product->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 06:03:12 --> Error: Class "App\Models\ProductModel" not found
+in APPPATH\Controllers\Workflow_Product.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(913): App\Controllers\Workflow_Product->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 06:03:39 --> ErrorException: Undefined array key "msg"
+in APPPATH\Controllers\BaseController.php on line 70.
+ 1 APPPATH\Controllers\BaseController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "msg"', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Controllers\\BaseController.php', 70)
+ 2 APPPATH\Controllers\Workflow_Product.php(62): App\Controllers\BaseController->response_message([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->getProduct()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 06:04:34 --> ErrorException: Undefined array key "msg"
+in APPPATH\Controllers\BaseController.php on line 70.
+ 1 APPPATH\Controllers\BaseController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "msg"', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Controllers\\BaseController.php', 70)
+ 2 APPPATH\Controllers\Workflow_Product.php(62): App\Controllers\BaseController->response_message([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->getProduct()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 06:04:35 --> ErrorException: Undefined array key "msg"
+in APPPATH\Controllers\BaseController.php on line 70.
+ 1 APPPATH\Controllers\BaseController.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "msg"', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Controllers\\BaseController.php', 70)
+ 2 APPPATH\Controllers\Workflow_Product.php(62): App\Controllers\BaseController->response_message([...])
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->getProduct()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 06:05:56 --> ErrorException: require(imports/js.php): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 218.
+ 1 APPPATH\Views\index.php(218): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(imports/js.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\index.php', 218)
+ 2 APPPATH\Views\index.php(218): require()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\BaseAction.php(17): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 06:05:56 --> ErrorException: require(imports/js.php): Failed to open stream: No such file or directory
+in APPPATH\Views\index.php on line 218.
+ 1 APPPATH\Views\index.php(218): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require(imports/js.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\index.php', 218)
+ 2 APPPATH\Views\index.php(218): require()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\index.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('index', [], true)
+ 6 APPPATH\Controllers\BaseAction.php(17): view('index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-20 07:00:44 --> mysqli_sql_exception: Table 'petz24_db.product_tbl_img' doesn't exist in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp\htdocs\projects\petz24\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp\htdocs\projects\petz24\app\Controllers\Workflow_Product.php(117): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\Workflow_Product->getSpecificProduct()
+#6 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+#7 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-20 07:00:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.product_tbl_img' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_tbl_img` ON `product_tbl_img`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = :pet_tbl.flag:
+AND `product_type_tbl`.`flag` = :product_type_tbl.flag:
+AND `product_category_tbl`.`flag` = :product_category_tbl.flag:
+AND `product_tbl`.`flag` = :product_tbl.flag:
+AND `brand_tbl`.`flag` = :brand_tbl.flag:
+AND `breed_tbl`.`flag` = :breed_tbl.flag:
+AND `product_tbl_img`.`flag` = :product_tbl_img.flag:
+AND `pet_tbl`.`pet_name` = :pet_tbl.pet_name:
+AND `product_type_tbl`.`type` = :product_type_tbl.type:
+AND `product_category_tbl`.`category` = :product_category_tbl.category:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product.php(117): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->getSpecificProduct()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 07:00:44 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'petz24_db.product_tbl_img' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_tbl_img` ON `product_tbl_img`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = 1
+AND `product_type_tbl`.`flag` = 1
+AND `product_category_tbl`.`flag` = 1
+AND `product_tbl`.`flag` = 1
+AND `brand_tbl`.`flag` = 1
+AND `breed_tbl`.`flag` = 1
+AND `product_tbl_img`.`flag` = 1
+AND `pet_tbl`.`pet_name` = \'dog\'
+AND `product_type_tbl`.`type` = \'food\'
+AND `product_category_tbl`.`category` = \'dry food\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_tbl_img` ON `product_tbl_img`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = 1
+AND `product_type_tbl`.`flag` = 1
+AND `product_category_tbl`.`flag` = 1
+AND `product_tbl`.`flag` = 1
+AND `brand_tbl`.`flag` = 1
+AND `breed_tbl`.`flag` = 1
+AND `product_tbl_img`.`flag` = 1
+AND `pet_tbl`.`pet_name` = \'dog\'
+AND `product_type_tbl`.`type` = \'food\'
+AND `product_category_tbl`.`category` = \'dry food\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_tbl_img` ON `product_tbl_img`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = :pet_tbl.flag:
+AND `product_type_tbl`.`flag` = :product_type_tbl.flag:
+AND `product_category_tbl`.`flag` = :product_category_tbl.flag:
+AND `product_tbl`.`flag` = :product_tbl.flag:
+AND `brand_tbl`.`flag` = :brand_tbl.flag:
+AND `breed_tbl`.`flag` = :breed_tbl.flag:
+AND `product_tbl_img`.`flag` = :product_tbl_img.flag:
+AND `pet_tbl`.`pet_name` = :pet_tbl.pet_name:
+AND `product_type_tbl`.`type` = :product_type_tbl.type:
+AND `product_category_tbl`.`category` = :product_category_tbl.category:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product.php(117): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->getSpecificProduct()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 07:00:44 --> [Caused by] mysqli_sql_exception: Table 'petz24_db.product_tbl_img' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_tbl_img` ON `product_tbl_img`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = 1
+AND `product_type_tbl`.`flag` = 1
+AND `product_category_tbl`.`flag` = 1
+AND `product_tbl`.`flag` = 1
+AND `brand_tbl`.`flag` = 1
+AND `breed_tbl`.`flag` = 1
+AND `product_tbl_img`.`flag` = 1
+AND `pet_tbl`.`pet_name` = \'dog\'
+AND `product_type_tbl`.`type` = \'food\'
+AND `product_category_tbl`.`category` = \'dry food\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_tbl_img` ON `product_tbl_img`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = 1
+AND `product_type_tbl`.`flag` = 1
+AND `product_category_tbl`.`flag` = 1
+AND `product_tbl`.`flag` = 1
+AND `brand_tbl`.`flag` = 1
+AND `breed_tbl`.`flag` = 1
+AND `product_tbl_img`.`flag` = 1
+AND `pet_tbl`.`pet_name` = \'dog\'
+AND `product_type_tbl`.`type` = \'food\'
+AND `product_category_tbl`.`category` = \'dry food\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_tbl_img` ON `product_tbl_img`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = 1
+AND `product_type_tbl`.`flag` = 1
+AND `product_category_tbl`.`flag` = 1
+AND `product_tbl`.`flag` = 1
+AND `brand_tbl`.`flag` = 1
+AND `breed_tbl`.`flag` = 1
+AND `product_tbl_img`.`flag` = 1
+AND `pet_tbl`.`pet_name` = \'dog\'
+AND `product_type_tbl`.`type` = \'food\'
+AND `product_category_tbl`.`category` = \'dry food\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category` as `category`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_tbl_img` ON `product_tbl_img`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = :pet_tbl.flag:
+AND `product_type_tbl`.`flag` = :product_type_tbl.flag:
+AND `product_category_tbl`.`flag` = :product_category_tbl.flag:
+AND `product_tbl`.`flag` = :product_tbl.flag:
+AND `brand_tbl`.`flag` = :brand_tbl.flag:
+AND `breed_tbl`.`flag` = :breed_tbl.flag:
+AND `product_tbl_img`.`flag` = :product_tbl_img.flag:
+AND `pet_tbl`.`pet_name` = :pet_tbl.pet_name:
+AND `product_type_tbl`.`type` = :product_type_tbl.type:
+AND `product_category_tbl`.`category` = :product_category_tbl.category:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product.php(117): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->getSpecificProduct()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-20 07:01:58 --> mysqli_sql_exception: Unknown column 'product_category_tbl.category as category product_img_tbl.url' in 'field list' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp\htdocs\projects\petz24\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp\htdocs\projects\petz24\app\Controllers\Workflow_Product.php(119): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\Workflow_Product->getSpecificProduct()
+#6 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+#7 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-20 07:01:58 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_category_tbl.category as category product_img_tbl.url' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = :pet_tbl.flag:
+AND `product_type_tbl`.`flag` = :product_type_tbl.flag:
+AND `product_category_tbl`.`flag` = :product_category_tbl.flag:
+AND `product_tbl`.`flag` = :product_tbl.flag:
+AND `brand_tbl`.`flag` = :brand_tbl.flag:
+AND `breed_tbl`.`flag` = :breed_tbl.flag:
+AND `product_img_tbl`.`flag` = :product_img_tbl.flag:
+AND `pet_tbl`.`pet_name` = :pet_tbl.pet_name:
+AND `product_type_tbl`.`type` = :product_type_tbl.type:
+AND `product_category_tbl`.`category` = :product_category_tbl.category:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->getSpecificProduct()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 07:01:58 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_category_tbl.category as category product_img_tbl.url' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = 1
+AND `product_type_tbl`.`flag` = 1
+AND `product_category_tbl`.`flag` = 1
+AND `product_tbl`.`flag` = 1
+AND `brand_tbl`.`flag` = 1
+AND `breed_tbl`.`flag` = 1
+AND `product_img_tbl`.`flag` = 1
+AND `pet_tbl`.`pet_name` = \'dog\'
+AND `product_type_tbl`.`type` = \'food\'
+AND `product_category_tbl`.`category` = \'dry food\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = 1
+AND `product_type_tbl`.`flag` = 1
+AND `product_category_tbl`.`flag` = 1
+AND `product_tbl`.`flag` = 1
+AND `brand_tbl`.`flag` = 1
+AND `breed_tbl`.`flag` = 1
+AND `product_img_tbl`.`flag` = 1
+AND `pet_tbl`.`pet_name` = \'dog\'
+AND `product_type_tbl`.`type` = \'food\'
+AND `product_category_tbl`.`category` = \'dry food\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = :pet_tbl.flag:
+AND `product_type_tbl`.`flag` = :product_type_tbl.flag:
+AND `product_category_tbl`.`flag` = :product_category_tbl.flag:
+AND `product_tbl`.`flag` = :product_tbl.flag:
+AND `brand_tbl`.`flag` = :brand_tbl.flag:
+AND `breed_tbl`.`flag` = :breed_tbl.flag:
+AND `product_img_tbl`.`flag` = :product_img_tbl.flag:
+AND `pet_tbl`.`pet_name` = :pet_tbl.pet_name:
+AND `product_type_tbl`.`type` = :product_type_tbl.type:
+AND `product_category_tbl`.`category` = :product_category_tbl.category:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->getSpecificProduct()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 07:01:58 --> [Caused by] mysqli_sql_exception: Unknown column 'product_category_tbl.category as category product_img_tbl.url' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = 1
+AND `product_type_tbl`.`flag` = 1
+AND `product_category_tbl`.`flag` = 1
+AND `product_tbl`.`flag` = 1
+AND `brand_tbl`.`flag` = 1
+AND `breed_tbl`.`flag` = 1
+AND `product_img_tbl`.`flag` = 1
+AND `pet_tbl`.`pet_name` = \'dog\'
+AND `product_type_tbl`.`type` = \'food\'
+AND `product_category_tbl`.`category` = \'dry food\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = 1
+AND `product_type_tbl`.`flag` = 1
+AND `product_category_tbl`.`flag` = 1
+AND `product_tbl`.`flag` = 1
+AND `brand_tbl`.`flag` = 1
+AND `breed_tbl`.`flag` = 1
+AND `product_img_tbl`.`flag` = 1
+AND `pet_tbl`.`pet_name` = \'dog\'
+AND `product_type_tbl`.`type` = \'food\'
+AND `product_category_tbl`.`category` = \'dry food\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = 1
+AND `product_type_tbl`.`flag` = 1
+AND `product_category_tbl`.`flag` = 1
+AND `product_tbl`.`flag` = 1
+AND `brand_tbl`.`flag` = 1
+AND `breed_tbl`.`flag` = 1
+AND `product_img_tbl`.`flag` = 1
+AND `pet_tbl`.`pet_name` = \'dog\'
+AND `product_type_tbl`.`type` = \'food\'
+AND `product_category_tbl`.`category` = \'dry food\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = :pet_tbl.flag:
+AND `product_type_tbl`.`flag` = :product_type_tbl.flag:
+AND `product_category_tbl`.`flag` = :product_category_tbl.flag:
+AND `product_tbl`.`flag` = :product_tbl.flag:
+AND `brand_tbl`.`flag` = :brand_tbl.flag:
+AND `breed_tbl`.`flag` = :breed_tbl.flag:
+AND `product_img_tbl`.`flag` = :product_img_tbl.flag:
+AND `pet_tbl`.`pet_name` = :pet_tbl.pet_name:
+AND `product_type_tbl`.`type` = :product_type_tbl.type:
+AND `product_category_tbl`.`category` = :product_category_tbl.category:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->getSpecificProduct()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-20 07:02:32 --> mysqli_sql_exception: Unknown column 'product_category_tbl.category as category product_img_tbl.url' in 'field list' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 C:\xampp\htdocs\projects\petz24\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 C:\xampp\htdocs\projects\petz24\app\Controllers\Workflow_Product.php(119): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\Workflow_Product->getSpecificProduct()
+#6 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+#7 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-10-20 07:02:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_category_tbl.category as category product_img_tbl.url' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = :pet_tbl.flag:
+AND `product_type_tbl`.`flag` = :product_type_tbl.flag:
+AND `product_category_tbl`.`flag` = :product_category_tbl.flag:
+AND `product_tbl`.`flag` = :product_tbl.flag:
+AND `brand_tbl`.`flag` = :brand_tbl.flag:
+AND `breed_tbl`.`flag` = :breed_tbl.flag:
+AND `product_img_tbl`.`flag` = :product_img_tbl.flag:
+AND `pet_tbl`.`pet_name` = :pet_tbl.pet_name:
+AND `product_type_tbl`.`type` = :product_type_tbl.type:
+AND `product_category_tbl`.`category` = :product_category_tbl.category:', [...], false)
+ 2 APPPATH\Controllers\Workflow_Product.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->getSpecificProduct()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 07:02:32 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'product_category_tbl.category as category product_img_tbl.url' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = 1
+AND `product_type_tbl`.`flag` = 1
+AND `product_category_tbl`.`flag` = 1
+AND `product_tbl`.`flag` = 1
+AND `brand_tbl`.`flag` = 1
+AND `breed_tbl`.`flag` = 1
+AND `product_img_tbl`.`flag` = 1
+AND `pet_tbl`.`pet_name` = \'dog\'
+AND `product_type_tbl`.`type` = \'food\'
+AND `product_category_tbl`.`category` = \'dry food\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = 1
+AND `product_type_tbl`.`flag` = 1
+AND `product_category_tbl`.`flag` = 1
+AND `product_tbl`.`flag` = 1
+AND `brand_tbl`.`flag` = 1
+AND `breed_tbl`.`flag` = 1
+AND `product_img_tbl`.`flag` = 1
+AND `pet_tbl`.`pet_name` = \'dog\'
+AND `product_type_tbl`.`type` = \'food\'
+AND `product_category_tbl`.`category` = \'dry food\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = :pet_tbl.flag:
+AND `product_type_tbl`.`flag` = :product_type_tbl.flag:
+AND `product_category_tbl`.`flag` = :product_category_tbl.flag:
+AND `product_tbl`.`flag` = :product_tbl.flag:
+AND `brand_tbl`.`flag` = :brand_tbl.flag:
+AND `breed_tbl`.`flag` = :breed_tbl.flag:
+AND `product_img_tbl`.`flag` = :product_img_tbl.flag:
+AND `pet_tbl`.`pet_name` = :pet_tbl.pet_name:
+AND `product_type_tbl`.`type` = :product_type_tbl.type:
+AND `product_category_tbl`.`category` = :product_category_tbl.category:', [...], false)
+ 4 APPPATH\Controllers\Workflow_Product.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->getSpecificProduct()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-20 07:02:32 --> [Caused by] mysqli_sql_exception: Unknown column 'product_category_tbl.category as category product_img_tbl.url' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = 1
+AND `product_type_tbl`.`flag` = 1
+AND `product_category_tbl`.`flag` = 1
+AND `product_tbl`.`flag` = 1
+AND `brand_tbl`.`flag` = 1
+AND `breed_tbl`.`flag` = 1
+AND `product_img_tbl`.`flag` = 1
+AND `pet_tbl`.`pet_name` = \'dog\'
+AND `product_type_tbl`.`type` = \'food\'
+AND `product_category_tbl`.`category` = \'dry food\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = 1
+AND `product_type_tbl`.`flag` = 1
+AND `product_category_tbl`.`flag` = 1
+AND `product_tbl`.`flag` = 1
+AND `brand_tbl`.`flag` = 1
+AND `breed_tbl`.`flag` = 1
+AND `product_img_tbl`.`flag` = 1
+AND `pet_tbl`.`pet_name` = \'dog\'
+AND `product_type_tbl`.`type` = \'food\'
+AND `product_category_tbl`.`category` = \'dry food\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = 1
+AND `product_type_tbl`.`flag` = 1
+AND `product_category_tbl`.`flag` = 1
+AND `product_tbl`.`flag` = 1
+AND `brand_tbl`.`flag` = 1
+AND `breed_tbl`.`flag` = 1
+AND `product_img_tbl`.`flag` = 1
+AND `pet_tbl`.`pet_name` = \'dog\'
+AND `product_type_tbl`.`type` = \'food\'
+AND `product_category_tbl`.`category` = \'dry food\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product_tbl`.`product_id` as `product_id`, `product_tbl`.`pet_id` as `pet_id`, `product_tbl`.`product_price` as `product_price`, `product_tbl`.`brand_id` as `brand_id`, `product_tbl`.`breed_id` as `breed_id`, `product_tbl`.`product_type_id` as `product_type_id`, `product_tbl`.`product_category_id` as `product_category_id`, `product_tbl`.`name` as `name`, `product_tbl`.`summery` as `summery`, `product_tbl`.`description` as `description`, `product_tbl`.`instruction` as `instruction`, `pet_tbl`.`pet_name` as `pet_name`, `brand_tbl`.`brand_name` as `brand_name`, `breed_tbl`.`breed_name` as `breed_name`, `product_type_tbl`.`type` as `type`, `product_category_tbl`.`category as category product_img_tbl`.`url` as `product_img`
+FROM `product_tbl`
+INNER JOIN `product_category_tbl` ON `product_category_tbl`.`product_category_id` = `product_tbl`.`product_category_id`
+INNER JOIN `product_type_tbl` ON `product_type_tbl`.`product_type_id` = `product_tbl`.`product_type_id`
+INNER JOIN `pet_tbl` ON `pet_tbl`.`pet_id` = `product_tbl`.`pet_id`
+INNER JOIN `brand_tbl` ON `brand_tbl`.`brand_id` = `product_tbl`.`brand_id`
+INNER JOIN `breed_tbl` ON `breed_tbl`.`breed_id` = `product_tbl`.`breed_id`
+INNER JOIN `product_img_tbl` ON `product_img_tbl`.`product_id` = `product_tbl`.`product_id`
+WHERE `pet_tbl`.`flag` = :pet_tbl.flag:
+AND `product_type_tbl`.`flag` = :product_type_tbl.flag:
+AND `product_category_tbl`.`flag` = :product_category_tbl.flag:
+AND `product_tbl`.`flag` = :product_tbl.flag:
+AND `brand_tbl`.`flag` = :brand_tbl.flag:
+AND `breed_tbl`.`flag` = :breed_tbl.flag:
+AND `product_img_tbl`.`flag` = :product_img_tbl.flag:
+AND `pet_tbl`.`pet_name` = :pet_tbl.pet_name:
+AND `product_type_tbl`.`type` = :product_type_tbl.type:
+AND `product_category_tbl`.`category` = :product_category_tbl.category:', [...], false)
+ 5 APPPATH\Controllers\Workflow_Product.php(119): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Workflow_Product->getSpecificProduct()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Workflow_Product))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

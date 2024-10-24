@@ -1,0 +1,114 @@
+CRITICAL - 2024-10-13 04:37:16 --> ErrorException: Undefined variable $menuItems
+in APPPATH\Views\components\header.php on line 2.
+ 1 APPPATH\Views\components\header.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menuItems', 'C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\components\\header.php', 2)
+ 2 APPPATH\Views\product.php(7): require('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\components\\header.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\product.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('product', [], true)
+ 6 APPPATH\Controllers\BaseAction.php(23): view('product')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->product()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-13 06:07:49 --> mysqli_sql_exception: Not unique table/alias: 'product_category_tbl' in C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\projects\petz24\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\projects\petz24\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\projects\petz24\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\projects\petz24\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\projects\petz24\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\projects\petz24\app\Models\MenuModel.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\projects\petz24\app\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+#8 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+#9 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+#10 C:\xampp\htdocs\projects\petz24\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\projects\petz24\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-10-13 06:07:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'product_category_tbl'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`pet_id` = `pet_tbl`.`pet_id`
+JOIN `product_category_tbl` ON `product_category_tbl`.`product_type_id` = `product_type_tbl`.`product_type_id`
+WHERE `pet_tbl`.`flag` = :pet_tbl.flag:', [...], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\MenuModel.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-13 06:07:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Not unique table/alias: 'product_category_tbl'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`pet_id` = `pet_tbl`.`pet_id`
+JOIN `product_category_tbl` ON `product_category_tbl`.`product_type_id` = `product_type_tbl`.`product_type_id`
+WHERE `pet_tbl`.`flag` = 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`pet_id` = `pet_tbl`.`pet_id`
+JOIN `product_category_tbl` ON `product_category_tbl`.`product_type_id` = `product_type_tbl`.`product_type_id`
+WHERE `pet_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`pet_id` = `pet_tbl`.`pet_id`
+JOIN `product_category_tbl` ON `product_category_tbl`.`product_type_id` = `product_type_tbl`.`product_type_id`
+WHERE `pet_tbl`.`flag` = :pet_tbl.flag:', [...], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\MenuModel.php(18): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-13 06:07:49 --> [Caused by] mysqli_sql_exception: Not unique table/alias: 'product_category_tbl'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`pet_id` = `pet_tbl`.`pet_id`
+JOIN `product_category_tbl` ON `product_category_tbl`.`product_type_id` = `product_type_tbl`.`product_type_id`
+WHERE `pet_tbl`.`flag` = 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`pet_id` = `pet_tbl`.`pet_id`
+JOIN `product_category_tbl` ON `product_category_tbl`.`product_type_id` = `product_type_tbl`.`product_type_id`
+WHERE `pet_tbl`.`flag` = 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`pet_id` = `pet_tbl`.`pet_id`
+JOIN `product_category_tbl` ON `product_category_tbl`.`product_type_id` = `product_type_tbl`.`product_type_id`
+WHERE `pet_tbl`.`flag` = 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `product_category_tbl`
+JOIN `product_type_tbl` ON `product_type_tbl`.`pet_id` = `pet_tbl`.`pet_id`
+JOIN `product_category_tbl` ON `product_category_tbl`.`product_type_id` = `product_type_tbl`.`product_type_id`
+WHERE `pet_tbl`.`flag` = :pet_tbl.flag:', [...], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\MenuModel.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-13 06:19:39 --> Error: Call to undefined function App\Models\retrun()
+in APPPATH\Models\MenuModel.php on line 46.
+ 1 APPPATH\Controllers\BaseAction.php(16): App\Models\MenuModel->getMenuWithCategoryAndBrand()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-10-13 06:21:38 --> ParseError: syntax error, unexpected token "echo"
+in APPPATH\Views\components\header.php on line 1164.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('index', [], true)
+ 4 APPPATH\Controllers\BaseAction.php(17): view('index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\BaseAction))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
