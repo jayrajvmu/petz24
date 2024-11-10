@@ -151,6 +151,9 @@
 
 
 
+
+
+
     <?php require('components/footer.php')?>
     <?php require('components/js.php')?>
 </body>

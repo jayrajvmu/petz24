@@ -69,6 +69,7 @@ body {
     .section-title {
         font-size: 1.5rem;
     }
+
     .image-wrapper {
         width: 120px;
         height: 120px;
@@ -82,13 +83,13 @@ body {
     text-align: center;
 }
 
-.book-appoinment .appoinment{
+.book-appoinment .appoinment {
     background-color: #05213f;
     border-radius: 25px;
     padding: 12px 25px;
 }
 
-.book-appoinment .appoinment a{
+.book-appoinment .appoinment a {
     color: #fff;
 }
 
@@ -97,63 +98,62 @@ body {
 
 
 
-.zigly-home-section{
-    background-color: #fdf6ec;
+.zigly-home-section {
+    background-color: #fff3df;
 
 }
 
 .zigly-home-section .left {
-    flex: 0 0 30%; /* Fixed to 30% width */
-  }
-  
-  .zigly-home-section .right {
-    flex: 0 0 70%; /* Fixed to 70% width */
-  }
+    flex: 0 0 30%;
+}
 
-.zigly-home-section-wrapper{
+.zigly-home-section .right {
+    flex: 0 0 70%;
+}
+
+.zigly-home-section-wrapper {
 
     display: flex;
     width: 100%;
+    padding: 20px
 }
 
 
-.zigly-home-section-wrapper .left{
-  background-color: #05213f;
-  position: relative;
+.zigly-home-section-wrapper .left {
+    background-color: #052a50;
+    position: relative;
+
+    border-bottom-right-radius: 120px;
+    border-top-left-radius: 120px;
 }
-.zigly-home-section-wrapper .left .left-content{
-padding: 20px;
+
+.zigly-home-section-wrapper .left .left-content {
+    padding: 30px 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
-/* 
-.zigly-home-section-wrapper .left:after{
-    content: '';
-    position: absolute;
-    width: 50%;
-    left: -236px;
-    height: 50%;
-    top: -130px;
-    bottom: auto;
-    background: url(https://www.zigly.com/static/version1728041921/frontend/Amasty/JetTheme_child/en_US/images/at-home-dog.png) no-repeat center;
-    background-size: contain;
-    }
-     */
 
 
 
 
-.zigly-home-section-wrapper .left .left-content .left-heading{
+.zigly-home-section-wrapper .left .left-content .left-heading {
     color: #fff;
     font-weight: 400;
     font-size: 2rem;
     margin-bottom: 20px;
     text-transform: uppercase;
 
-  }
-  
+}
 
-  .zigly-home-section-wrapper .left .left-content h3{
+
+.zigly-home-section-wrapper .left .left-content h3 {
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.4;
     font-weight: 100;
 
 }
@@ -161,7 +161,7 @@ padding: 20px;
 
 
 
-.zigly-home-section-wrapper .right .zigly-steps{
+.zigly-home-section-wrapper .right .zigly-steps {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -181,6 +181,7 @@ padding: 20px;
 .step {
     text-align: center;
     width: 150px;
+    margin-bottom: 10px;
 }
 
 .icon-circle {
@@ -201,37 +202,70 @@ padding: 20px;
 }
 
 .step p {
-    font-size: 1rem;
-    color: #001f45;
+    font-weight: 500;
+    color: #183762;
+    line-height: 22px;
 }
 
 
-.book-appoinment-2{
+.book-appoinment-2 {
     text-align: center;
     padding-bottom: 20px;
-   
+
 }
 
-.book-appoinment-2 button{
+.book-appoinment-2 button {
     background-color: #05213f;
-border-radius: 25px;
-padding: 12px 25px;
-   
+    border-radius: 25px;
+    padding: 12px 25px;
+
 }
 
-.book-appoinment-2 button a{
-  color: #fff;
-   
+.book-appoinment-2 button a {
+    color: #fff;
+
 }
 
 
 
+
+@media (max-width: 1220px) {
+
+
+    .zigly-home-section-wrapper .left .left-content {
+        padding: 30px;
+    
+
+    }
+    .zigly-home-section .left {
+        flex: 0 0 40%;
+    }
+    
+    .zigly-home-section .right {
+        flex: 0 0 60%;
+    }
+    
+}
 
 @media (max-width: 768px) {
-    .zigly-home-section-wrapper{
+    .zigly-home-section-wrapper {
 
         display: flex;
         flex-direction: column;
+    }
+
+    .zigly-home-section-wrapper .left {
+
+        border-bottom-right-radius: 0px;
+        border-top-left-radius:0px;
+    }
+    
+
+
+    .zigly-home-section-wrapper .left .left-content h3 {
+        font-size: 16px;
+   
+    
     }
     
 }
