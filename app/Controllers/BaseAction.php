@@ -62,7 +62,9 @@ class BaseAction extends BaseController
     }
     public function about()
     {
-        return view('about');
+        $data['menuItems'] = $this->menuModel->getMenuWithCategoryAndBrand();
+
+        return view('about', $data);
     }
     public function contact()
     {
@@ -82,16 +84,32 @@ class BaseAction extends BaseController
     }
     public function addpet()
     {
-        return view('addpet');
+
+        $data['menuItems'] = $this->menuModel->getMenuWithCategoryAndBrand();
+        return view('addpet', $data); 
     }
     public function groomingcenter()
     {
-        return view('groomingcenter');
+
+        $data['menuItems'] = $this->menuModel->getMenuWithCategoryAndBrand();
+
+        return view('groomingcenter', $data);
     }
     public function consultationcenter()
     {
         return view('consultationcenter');
     }
+
+
+
+    public function petgrooming()
+    {
+
+        $data['menuItems'] = $this->menuModel->getMenuWithCategoryAndBrand();
+
+        return view('petgrooming', $data);
+    }
+
 
     
 }

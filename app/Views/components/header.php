@@ -103,85 +103,8 @@
 
 
                                                  
-                                                    
+                                        
                                                     <li class="menu-link parent">
-                                                        <a href="javascript:void(0)" class="link-title">
-                                                            <span class="sp-link-title">Brands</span>
-                                                            <i class="fa fa-angle-down"></i>
-                                                        </a>
-                                                        <a href="#collapse-top-mega-menu" data-bs-toggle="collapse"
-                                                            class="link-title link-title-lg">
-                                                            <span class="sp-link-title">Food</span>
-                                                            <i class="fa fa-angle-down"></i>
-                                                        </a>
-                                                        <ul class="dropdown-submenu mega-menu collapse"
-                                                            id="collapse-top-mega-menu">
-                                                            <li class="megamenu-li parent">
-                                                                <h2 class="sublink-title">Food</h2>
-                                                                <a href="#collapse-top-sub-mega-menu"
-                                                                    data-bs-toggle="collapse"
-                                                                    class="sublink-title sublink-title-lg">
-                                                                    <span>Fresh food</span>
-                                                                    <i class="fa fa-angle-down"></i>
-                                                                </a>
-                                                                <ul class="dropdown-supmenu collapse"
-                                                                    id="collapse-top-sub-mega-menu">
-                                                                    <li class="supmenu-li"><a href="#">Dry Food</a></li>
-                                                                    <li class="supmenu-li"><a href="#">Wet Food</a></li>
-                                                                    <li class="supmenu-li"><a href="#">Fresh Food</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>
-                                                            <li class="megamenu-li parent">
-                                                                <h2 class="sublink-title">Treats</h2>
-                                                                <a href="#collapse-top-fruits-menu"
-                                                                    data-bs-toggle="collapse"
-                                                                    class="sublink-title sublink-title-lg">
-                                                                    <span>Treats</span>
-                                                                    <i class="fa fa-angle-down"></i>
-                                                                </a>
-                                                                <ul class="dropdown-supmenu collapse"
-                                                                    id="collapse-top-fruits-menu">
-                                                                    <li class="supmenu-li"><a href="#">Biscuits</a></li>
-                                                                    <li class="supmenu-li"><a href="#">Cookies</a></li>
-                                                                    <li class="supmenu-li"><a href="#">Chicken</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li class="megamenu-li parent">
-                                                                <h2 class="sublink-title">Toys</h2>
-                                                                <a href="#collapse-top-banana-menu"
-                                                                    data-bs-toggle="collapse"
-                                                                    class="sublink-title sublink-title-lg">
-                                                                    <span>Toys</span>
-                                                                    <i class="fa fa-angle-down"></i>
-                                                                </a>
-                                                                <ul class="dropdown-supmenu collapse"
-                                                                    id="collapse-top-banana-menu">
-                                                                    <li class="supmenu-li"><a href="#">Chew Toy</a></li>
-                                                                    <li class="supmenu-li"><a href="#">Plush Toy</a>
-                                                                    </li>
-                                                                    <li class="supmenu-li"><a href="#">Rope Toy</a></li>
-                                                                </ul>
-                                                            </li>
-                                                            <li class="megamenu-li parent">
-                                                                <h2 class="sublink-title">Grooming</h2>
-                                                                <a href="#collapse-top-apple-menu"
-                                                                    data-bs-toggle="collapse"
-                                                                    class="sublink-title sublink-title-lg">
-                                                                    <span>Grooming</span>
-                                                                    <i class="fa fa-angle-down"></i>
-                                                                </a>
-                                                                <ul class="dropdown-supmenu collapse"
-                                                                    id="collapse-top-apple-menu">
-                                                                    <li class="supmenu-li"><a href="#">Shampoo</a></li>
-                                                                    <li class="supmenu-li"><a href="#">Wipes</a></li>
-                                                                    <li class="supmenu-li"><a href="#">Grooming
-                                                                            Tools</a></li>
-                                                                </ul>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                    <!-- <li class="menu-link parent">
                                                         <a href="javascript:void(0)" class="link-title">
                                                             <span class="sp-link-title">Pet Grooming</span>
                                                             <i class="fa fa-angle-down"></i>
@@ -339,7 +262,7 @@
                                                         <a href="javascript:void(0)" class="link-title">
                                                             <span class="sp-link-title">Happy Pets</span>
                                                         </a>
-                                                    </li> -->
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>

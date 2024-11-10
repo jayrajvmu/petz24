@@ -1,0 +1,36 @@
+CRITICAL - 2024-11-10 06:13:58 --> ErrorException: Undefined variable $menuItems
+in APPPATH\Views\components\header.php on line 53.
+ 1 APPPATH\Views\components\header.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Views\groomingcenter.php(12): require('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\components\\header.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\groomingcenter.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 6 APPPATH\Controllers\BaseAction.php(91): view()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->groomingcenter()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-10 06:19:38 --> ErrorException: Undefined variable $menuItems
+in APPPATH\Views\components\header.php on line 53.
+ 1 APPPATH\Views\components\header.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Views\about.php(10): require('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\components\\header.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\about.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 6 APPPATH\Controllers\BaseAction.php(65): view()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->about()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-11-10 06:21:36 --> ErrorException: Undefined variable $menuItems
+in APPPATH\Views\components\header.php on line 53.
+ 1 APPPATH\Views\components\header.php(53): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH\Views\petgrooming.php(10): require('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\components\\header.php')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\projects\\petz24\\app\\Views\\petgrooming.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render()
+ 6 APPPATH\Controllers\BaseAction.php(107): view()
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\BaseAction->petgrooming()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

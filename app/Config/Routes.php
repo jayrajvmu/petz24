@@ -15,6 +15,9 @@ $routes->get('profile', 'BaseAction::profile');
 $routes->get('cart', 'BaseAction::cart');
 //Wishlist
 $routes->get('wishlist', 'BaseAction::wishlist');
+// pet grooming
+$routes->get('petgrooming', 'BaseAction::petgrooming');
+
 //order
 $routes->get('order', 'BaseAction::order');
 //checkout
