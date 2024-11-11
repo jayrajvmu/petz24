@@ -84,7 +84,63 @@
     </div>
 
 
+    <section class="grooming-section">
 
+
+    <div class="container">
+  <div class="tab-section">
+    <div class="tab-link active" onclick="showPackage('basic')">BASIC GROOMING</div>
+    <div class="tab-link" onclick="showPackage('full')">FULL GROOMING PACKAGE WITH SPA</div>
+  </div>
+
+  <!-- Basic Grooming Package -->
+  <div id="basic" class="package-container">
+    <div class="package-image">
+      <img src="https://www.zigly.com/media/mageplaza/blog/post/resize/400x/y/o/your_guide_to_ticks_fleas_in_pets_symptoms_treatment_care.jpg" alt="Basic Grooming Image">
+    </div>
+    <div class="package-details">
+      <p class="price">*Prices may vary as per breed<br><strong>BASIC GROOMING</strong> ₹1,549.00 <span> | 60 mins</span></p>
+      <p class="included">What's Included</p>
+      <ul>
+        <li>Bath Shampoo Conditioner</li>
+        <li>Cleaning Package includes Ear and Nail Cleaning</li>
+        <li>Bath and Blow Dry</li>
+      </ul>
+      <p class="description">
+        Upon assessing your dog’s skin & coat, our groomers use suitable products, ensuring that it leaves with a clean coat & ears, and trimmed paws.
+      </p>
+    </div>
+  </div>
+
+  <!-- Full Grooming Package -->
+  <div id="full" class="package-container" style="display: none;">
+    <div class="package-image">
+      <img src="https://www.zigly.com/media/mageplaza/blog/post/resize/400x/d/o/dog_allergies.png" alt="Full Grooming Spa Package Image">
+    </div>
+    <div class="package-details">
+      <p class="price">*Prices may vary as per breed<br><strong>FULL GROOMING PACKAGE WITH SPA</strong> ₹2,499.00 <span> | 90 mins</span></p>
+      <p class="included">What's Included</p>
+      <ul>
+        <li>Bath Shampoo and Conditioner</li>
+        <li>Ear Cleaning and Nail Trimming</li>
+        <li>Full Body Haircut and Styling</li>
+        <li>Relaxing Massage and Aromatherapy</li>
+        <li>Bath and Blow Dry</li>
+      </ul>
+      <p class="description">
+        This package provides a complete grooming experience with spa-like relaxation, ensuring your pet is pampered and groomed to perfection.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+    </section>
+  
+    <div class="book-appoinment"><button id="book-now" class="appoinment" type="submit"> <a
+                href="/services/grooming/">BOOK NOW</a> </button>
+
+    </div>
 
     <section class="zigly-home-section">
 
@@ -150,12 +206,89 @@
 
 
 
+    <section class='card-section'>
+    <div class="container">
+    <div class="section-heading">Day-to-day Tips To Maintain Your Pet's Health</div>
 
+    <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.zigly.com/media/mageplaza/blog/post/resize/400x/d/o/dog_allergies.png" alt="Dog Allergies">
+          <div class="card-body">
+            <h5>Dog Allergies - Know All About Them!</h5>
+            <p>Common dog allergies that you need to be aware of to ensure your pet's health.</p>
+          </div>
+        </div>
+      </div>
 
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.zigly.com/media/mageplaza/blog/post/resize/400x/d/r/dry_skin_in_dogs.png" alt="Dry Skin in Dogs">
+          <div class="card-body">
+            <h5>Here's How You Can Prevent Dry Skin In Dogs</h5>
+            <p>Learn effective tips to keep your dog's skin hydrated and prevent dryness.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="https://www.zigly.com/media/mageplaza/blog/post/resize/400x/y/o/your_guide_to_ticks_fleas_in_pets_symptoms_treatment_care.jpg" alt="Ticks and Fleas in Pets">
+          <div class="card-body">
+            <h5>Your Guide To Ticks & Fleas in Pets: Symptoms, Treatment, Care</h5>
+            <p>Identify, treat, and prevent ticks and fleas to keep your pet safe and healthy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <div class="book-appoinment"><button id="book-now" class="appoinment" type="submit"> <a
+                href="/services/grooming/">BOOK NOW</a> </button>
+
+    </div>
+
+<section class="quality-section">
+
+    <div class="container-fluid ">
+    <div class="section-heading">Quality And Convenience - The Mantra Of Zigly Tribe</div>
+    <div class="sub-heading">Your little bundle of joy will always be in good hands. Our groomers are not just certified but also care for your pets with all their heart. And the best part is, that your pet can enjoy all our services at home.</div>
+
+    <div class="content-section">
+      <div class="content-card">
+        <img src="https://www.zigly.com/media/wysiwyg/certified_groomers.png" alt="Certified Groomers">
+        <div class="content-description">
+          <h5>Certified Groomers, At Your Service</h5>
+          <p>When the question is of your pet's upkeep, our certified, pet-loving groomers ensure that your pet enjoys the best-in-class services at the comfort of its home.</p>
+        </div>
+      </div>
+      <div class="content-card">
+        <img src="https://www.zigly.com/media/wysiwyg/certified_groomers.png" alt="Happy Pets, Happy Parents">
+        <div class="content-description">
+          <h5>Happy Pets, Happy Parents</h5>
+          <p>Our high-quality services address your pets' needs with the ultimate perfection! Every grooming session will help them be their best, happy selves.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="book-appoinment-2">
+                    <button class="appoinment" type="submit"> <a href="/services/grooming/">BOOK NOW</a> </button>
+
+                </div>
+  </div>
+  </section>
 
 
     <?php require('components/footer.php')?>
     <?php require('components/js.php')?>
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/css/responsive.css">
+
+    <script src="<?php echo base_url();?>assets/custom/js/grooming.js"></script>
+
 </body>
 
 </html>
