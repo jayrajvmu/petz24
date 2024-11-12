@@ -137,7 +137,7 @@
 
     </section>
   
-    <div class="book-appoinment"><button id="book-now" class="appoinment" type="submit"> <a
+    <div class="book-appoinment extra-padd-for-above-gif"><button id="book-now" class="appoinment" type="submit"> <a
                 href="/services/grooming/">BOOK NOW</a> </button>
 
     </div>
@@ -151,7 +151,15 @@
                 <div class="left-content">
                     <div class="left-heading">Zigly at Home</div>
                     <h3>Enjoy best-in-class <br>grooming services <br>from the comfort of <br>your home</h3>
+
+                    <div class="book-appoinment-2">
+                    <button class="appoinment" type="submit"> <a href="/services/grooming/">BOOK NOW</a> </button>
+
                 </div>
+                </div>
+
+                
+               
             </div>
 
             <div class="right">
@@ -188,10 +196,6 @@
                 </div>
 
 
-                <div class="book-appoinment-2">
-                    <button class="appoinment" type="submit"> <a href="/services/grooming/">BOOK NOW</a> </button>
-
-                </div>
 
             </div>
 
@@ -247,7 +251,7 @@
   </div>
     </section>
 
-    <div class="book-appoinment"><button id="book-now" class="appoinment" type="submit"> <a
+    <div class="book-appoinment-3"><button id="book-now" class="appoinment" type="submit"> <a
                 href="/services/grooming/">BOOK NOW</a> </button>
 
     </div>
@@ -275,7 +279,7 @@
       </div>
     </div>
 
-    <div class="book-appoinment-2">
+    <div class="book-appoinment-4">
                     <button class="appoinment" type="submit"> <a href="/services/grooming/">BOOK NOW</a> </button>
 
                 </div>

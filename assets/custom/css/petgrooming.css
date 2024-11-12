@@ -79,8 +79,27 @@ body {
 
 .book-appoinment {
     padding-top: 30px;
-    padding-bottom: 75px;
+    padding-bottom: 50px;
     text-align: center;
+}
+
+.book-appoinment-3 {
+  padding-top: 0px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.book-appoinment-3 .appoinment {
+  background-color: #05213f;
+  border-radius: 25px;
+  padding: 12px 25px;
+}
+
+.book-appoinment-3 .appoinment a {
+  color: #fff;
+}
+.extra-padd-for-above-gif{
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 
 .book-appoinment .appoinment {
@@ -116,7 +135,6 @@ body {
 
     display: flex;
     width: 100%;
-    padding: 20px;
     position: relative;
 }
 
@@ -125,8 +143,8 @@ body {
     background-color: #052a50;
     position: relative;
 
-    border-bottom-right-radius: 120px;
-    border-top-left-radius: 120px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
 }
 
 .zigly-home-section-wrapper .left .left-content {
@@ -157,7 +175,7 @@ body {
     background-image: url(https://media.tenor.com/DX4u1oHsZMsAAAAj/pawsum-playpawsum.gif);
     position: absolute;
     top: -150px;
-    left: -25px;
+    left: 65px;
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -189,6 +207,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    height: 100%;
 }
 
 
@@ -209,8 +228,8 @@ body {
 }
 
 .icon-circle {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     background-color: #ffc107;
     border-radius: 50%;
     display: flex;
@@ -230,23 +249,38 @@ body {
     color: #183762;
     line-height: 22px;
 }
+.book-appoinment-4 {
+padding-bottom: 20px;
+text-align: center;
 
+}
+
+.book-appoinment-4 button {
+  background-color: #05213f;
+  border-radius: 25px;
+  padding: 12px 25px;
+
+}
+
+.book-appoinment-4 button a {
+  color: #fff;
+
+}
 
 .book-appoinment-2 {
-    text-align: center;
-    padding-bottom: 20px;
+    margin-top: 25px;
 
 }
 
 .book-appoinment-2 button {
-    background-color: #05213f;
+    background-color: #febd2c;
     border-radius: 25px;
     padding: 12px 25px;
 
 }
 
 .book-appoinment-2 button a {
-    color: #fff;
+    color: #000;
 
 }
 
@@ -272,6 +306,12 @@ body {
 }
 
 @media (max-width: 768px) {
+
+  .zigly-home-section-wrapper .left .left-content::before{
+    top: -77px;
+    background-size: 77px;
+    left: 0px;
+  }
     .zigly-home-section-wrapper {
 
         display: flex;
@@ -281,7 +321,7 @@ body {
     .zigly-home-section-wrapper .left {
 
         border-bottom-right-radius: 0px;
-        border-top-left-radius:0px;
+        border-top-right-radius:0px;
     }
     
 
@@ -295,11 +335,7 @@ body {
 }
 
 @media (max-width: 440px) {
-    .zigly-home-section-wrapper .left .left-content::before{
-
-        top: -110px;
-        background-size: 100px;
-    }
+   
 
     .step{
         width: 100px;
@@ -391,6 +427,8 @@ body {
 
   .card-section{
     background: #f8f9fa;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
   }
 
