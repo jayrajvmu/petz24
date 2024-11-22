@@ -1,9 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
-}
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
 .section-title {
     font-size: 2rem;
     font-weight: bold;
@@ -492,7 +492,7 @@ text-align: center;
 
 
   /*  */
-
+/* 
   .grooming-section{
     background-color: #f8f9fa;
 margin: 20px 0;
@@ -571,10 +571,9 @@ margin: 20px 0;
     margin-top: 15px;
     font-size: 14px;
     color: #666;
-  }
+  } */
 
-  /* Responsive styling */
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .package-container {
       flex-direction: column;
       text-align: center;
@@ -589,4 +588,190 @@ margin: 20px 0;
     .tab-link {
       margin: 5px 0;
     }
+  } */
+
+  /* Container and General Styling */
+/* Main Grooming Section Styling */
+/* Main Grooming Section Styling */
+/* Main Grooming Section Styling */
+.grooming-section {  background-color: #f8f2e9; /* Soft beige background to match the image */
+  padding: 20px;
+}
+
+/* Main Grooming Section Styling */
+.grooming-section .container {
+  /* max-width: 800px; */
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  /* border-radius: 12px; */
+  overflow: hidden;
+}
+
+/* Tab Section Styling */
+.tab-section {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #0056b3; */
+}
+
+.tab-link {
+  flex: 1;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #052a50;;
+  cursor: pointer;
+  transition: background-color 0.4s, color 0.4s;
+  border-bottom: 3px solid transparent;
+}
+
+.tab-link.active {
+  /* background-color: #052a50; */
+  color: #052a50;;
+  border-bottom: 3px solid #ffc107;
+}
+
+.tab-link:hover {
+  /* background-color: #052a50; */
+}
+
+/* Package Container Styling */
+.package-container {
+  display: flex;
+  /* flex-direction: column; */
+  padding: 30px;
+  gap: 20px;
+}
+.package-image{
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.package-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  /* border-radius: 12px; */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+}
+
+/* Package Details Styling */
+.package-details {
+  color: #333333;
+}
+
+
+ .price{
+  display: flex;
+  justify-content: space-between;
+ }
+
+.price span {
+  color: #555555;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 5px 0;
+}
+.price div {
+  color: #555555;
+  font-size: 20px;
+  font-weight: normal;
+  padding: 5px 0;
+
+}
+.included {
+  font-size: 16px;
+  font-weight: bold;
+  color: #a89f91;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.grooming-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.grooming-section ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.grooming-section ul li::before {
+  content: '✔';
+  font-size: 16px;
+  color: #052a50;
+  display: inline-block;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666666;
+  margin-top: 20px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.description::before {
+  content: '“';
+  font-size: 40px;
+  color: #a89f91;
+  position: absolute;
+  left: 0;
+  top: -10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .package-details{
+    text-align: left;
   }
+  .grooming-section {  background-color: #f8f2e9; /* Soft beige background to match the image */
+    padding: 0px;
+  }
+
+  .grooming-section .container{
+    background-color: #f8f2e9;
+  }
+  .price{
+    flex-direction: column;
+    text-align: left;
+  }
+  .tab-section {
+    flex-direction: column;
+  }
+
+  .tab-link {
+    font-size: 12px;
+    padding: 12px 0;
+  }
+
+  .package-container {
+    align-items: center;
+    text-align: center;
+  }
+
+  .package-image img {
+    max-width: 100%;
+  }
+}
+
+
+@media  (max-width: 1024px) {
+.package-container{
+  flex-direction: column;
+}
+}

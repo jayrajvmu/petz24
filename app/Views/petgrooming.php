@@ -87,7 +87,7 @@
     <section class="grooming-section">
 
 
-    <div class="container">
+    <div class="container-fluid">
   <div class="tab-section">
     <div class="tab-link active" onclick="showPackage('basic')">BASIC GROOMING</div>
     <div class="tab-link" onclick="showPackage('full')">FULL GROOMING PACKAGE WITH SPA</div>
@@ -99,7 +99,34 @@
       <img src="https://www.zigly.com/media/mageplaza/blog/post/resize/400x/y/o/your_guide_to_ticks_fleas_in_pets_symptoms_treatment_care.jpg" alt="Basic Grooming Image">
     </div>
     <div class="package-details">
-      <p class="price">*Prices may vary as per breed<br><strong>BASIC GROOMING</strong> ₹1,549.00 <span> | 60 mins</span></p>
+
+
+      <div class="price">
+        <div class="left">
+
+        <span>
+        *Prices may vary as per breed
+        </span>
+
+        <div>BASIC GROOMING</div>
+
+        </div>
+
+        <div class="right">
+
+        <div> ₹1,549.00</div>
+
+        <span>
+        60 mins
+        </span>
+
+
+       
+        </div>
+      </div>
+     
+
+
       <p class="included">What's Included</p>
       <ul>
         <li>Bath Shampoo Conditioner</li>
@@ -118,7 +145,32 @@
       <img src="https://www.zigly.com/media/mageplaza/blog/post/resize/400x/d/o/dog_allergies.png" alt="Full Grooming Spa Package Image">
     </div>
     <div class="package-details">
-      <p class="price">*Prices may vary as per breed<br><strong>FULL GROOMING PACKAGE WITH SPA</strong> ₹2,499.00 <span> | 90 mins</span></p>
+     
+
+      
+      <div class="price">
+        <div class="left">
+
+        <span>
+        *Prices may vary as per breed
+        </span>
+
+        <div>FULL GROOMING PACKAGE WITH SPA</div>
+
+        </div>
+
+        <div class="right">
+
+        <div>₹2,499.00 </div>
+
+        <span>
+        90 mins
+        </span>
+
+
+       
+        </div>
+      </div>
       <p class="included">What's Included</p>
       <ul>
         <li>Bath Shampoo and Conditioner</li>
